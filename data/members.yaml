@@ -120,6 +120,7 @@
   photo: pierre-yves-rabattu.jpg
   web:
   linkedin:
+  
 - name: Manuel Fernández Martínez
   role: Research Engineer, UGA
   group: xwi
@@ -128,7 +129,7 @@
   web:
   linkedin:
 - name: Samy Kefs
-  role: Postdoctoral researcher
+  role: PhD student 
   group: xwi
   kind: junior
   photo: samy-kefs.jpg
@@ -141,6 +142,31 @@
   photo: kim-bazot.jpg
   web:
   linkedin:
+
+- name: Sofia Manzueta
+  role: PhD student
+  group: xwi
+  kind: junior
+  photo: sofia-manzueta.jpg
+  web:
+  linkedin:
+
+- name: Max Gommery
+  role: PhD student
+  group: xwi
+  kind: junior
+  photo: max-gommery.jpg
+  web:
+  linkedin:
+
+- name: Elena O Ceidig Hayes
+  role: PhD student
+  group: xwi
+  kind: junior
+  photo: elena-oceidighayes.jpg
+  web:
+  linkedin:
+
 
 # --- Image-guided Surgery and Neutron Capture Therapy ---
 - name: Christol Fabre
