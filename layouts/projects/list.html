@@ -17,7 +17,7 @@
         <p class="funder">{{ .funder }}</p>
         <p style="color:var(--ink)">{{ .summary }}</p>
         {{ with .partners }}<p class="partners"><b>Partners:</b> {{ . }}</p>{{ end }}
-        {{ with .url }}<a class="more" href="{{ . | relURL }}">Learn more {{ partial "icon.html" "arrow" }}</a>{{ end }}
+        {{ with .url }}<a class="more" href="{{ strings.TrimPrefix "/" . | relURL }}">Learn more {{ partial "icon.html" "arrow" }}</a>{{ end }}
       </article>
       {{ end }}{{ end }}
     </div>
