@@ -14,6 +14,15 @@ disableKinds = ["taxonomy", "term"]
   # Site of the X-ray Wave Imaging group (subgroup of 3T)
   xwi_url = "https://doctoremmetbrown.github.io/xray-wave-imaging/"
 
+  # Formulaire de contact (page Contact). Vide = le formulaire est masqué pour les visiteurs.
+  # Service gratuit FormSubmit : "https://formsubmit.co/ajax/ADRESSE_OU_ALIAS" (voir README).
+  contact_form_endpoint = ""
+
+  # Champs ajoutés à chaque envoi. Avec FormSubmit, _cc = copie à une autre adresse
+  # (plusieurs adresses séparées par des virgules).
+  [params.contact_form_fields]
+    _cc = ""
+
 [markup.goldmark.renderer]
   unsafe = true
 

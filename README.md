@@ -30,6 +30,7 @@ hugo server            # puis ouvrir http://localhost:1313
 | modifier les partenaires | `data/collaborators.yaml` |
 | modifier le texte d'un groupe | `content/research/*.md` |
 | modifier une plateforme | `content/platforms/*.md` |
+| activer le formulaire de contact | `hugo.toml` : `contact_form_endpoint` et `[params.contact_form_fields] _cc` (voir la section « Formulaire de contact ») |
 | ajouter un email de contact | `hugo.toml`, ajouter `contact_email = "..."` sous `[params]` ; il apparaît sur la page Contact |
 | changer l'adresse | `hugo.toml`, `[params] address` |
 
@@ -65,6 +66,25 @@ Le script a besoin d'accéder à `pub.orcid.org`. Il doit donc tourner sur votre
 **Mise à jour automatique.** Le workflow `.github/workflows/update-publications.yml` relance le script
 chaque lundi, enregistre le résultat s'il a changé et republie le site. Il peut aussi être lancé à la main
 depuis l'onglet *Actions* de GitHub.
+
+## Formulaire de contact
+
+La page Contact contient un formulaire (nom, email, sujet, message) qui envoie un email à Lucie et à moi.
+Le site étant statique, l'envoi passe par un service gratuit, [FormSubmit](https://formsubmit.co) (sans compte).
+Tant que `contact_form_endpoint` est vide dans `hugo.toml`, le formulaire est masqué pour les visiteurs
+(il affiche un rappel sur votre ordinateur avec `hugo server`).
+
+1. Dans `hugo.toml` : `contact_form_endpoint = "https://formsubmit.co/ajax/ADRESSE_DE_MANU"` et
+   `_cc = "ADRESSE_DE_LUCIE"` sous `[params.contact_form_fields]` (plusieurs adresses : séparées par des virgules).
+2. Publier, puis envoyer **un premier message de test** depuis le site en ligne : FormSubmit envoie à la
+   première adresse un email de confirmation. Cliquer sur le lien d'activation.
+3. (Recommandé) Cet email donne aussi une adresse aléatoire du type `https://formsubmit.co/ajax/xxxxxxxx` :
+   la mettre dans `contact_form_endpoint` à la place de l'email, pour ne pas montrer l'adresse dans le code de la page.
+   L'adresse en `_cc` reste visible dans le code de la page : utiliser une adresse déjà publique.
+4. Vérifier que Manu et Lucie reçoivent bien le message de test (et regarder les spams).
+
+Protection anti-spam : champ piège invisible et délai minimal avant envoi. Pour changer de service
+(Formspree, Web3Forms…), remplacer l'adresse et les champs : le formulaire envoie du JSON en `POST`.
 
 ## Déployer sur GitHub Pages
 

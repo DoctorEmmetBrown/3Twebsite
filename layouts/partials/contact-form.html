@@ -1,0 +1,57 @@
+{{- /* Formulaire de contact. Envoi par fetch vers un service tiers (voir README). */ -}}
+{{- $endpoint := site.Params.contact_form_endpoint -}}
+{{- $leads := where site.Data.members "kind" "lead" -}}
+{{ if $endpoint }}
+<form class="contact-form" data-contact-form data-endpoint="{{ $endpoint }}" method="post" action="#">
+  <p class="muted contact-to">
+    Your message is sent by email to
+    {{ range $i, $m := $leads }}{{ if $i }}{{ if eq (add $i 1) (len $leads) }} and {{ else }}, {{ end }}{{ end }}<strong>{{ $m.name }}</strong>{{ end }}.
+  </p>
+
+  <div class="field-row">
+    <div class="field">
+      <label for="cf-name">Name</label>
+      <input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="120">
+    </div>
+    <div class="field">
+      <label for="cf-email">Email</label>
+      <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="160">
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="cf-topic">Subject</label>
+    <select id="cf-topic" name="topic">
+      <option>Research collaboration</option>
+      <option>Access to a platform</option>
+      <option>Joining the team (internship, PhD, postdoc)</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="cf-message">Message</label>
+    <textarea id="cf-message" name="message" rows="7" required minlength="10" maxlength="5000"></textarea>
+  </div>
+
+  {{- /* champs masqués : anti-spam (pot de miel) et options du service */ -}}
+  <div class="hp" aria-hidden="true">
+    <label for="cf-site">Leave this field empty</label>
+    <input id="cf-site" name="_honey" type="text" tabindex="-1" autocomplete="off">
+  </div>
+  <input type="hidden" name="_subject" value="[3T website] Contact">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  {{ range $k, $v := site.Params.contact_form_fields }}{{ if $v }}<input type="hidden" name="{{ $k }}" value="{{ $v }}">
+  {{ end }}{{ end }}
+
+  <div class="btns">
+    <button class="btn" type="submit" data-submit>Send message</button>
+  </div>
+  <p class="form-status" role="status" aria-live="polite" data-status></p>
+  <p class="muted form-note"><small>We only use your details to reply to you. Your message is relayed by an external form service before reaching our mailboxes.</small></p>
+  <noscript><p class="form-status err">This form needs JavaScript.{{ with site.Params.contact_email }} You can write to us at <a href="mailto:{{ . }}">{{ . }}</a>.{{ end }}</p></noscript>
+</form>
+{{ else if hugo.IsServer }}
+<div class="panel"><p style="margin:0"><strong>Contact form not configured.</strong> Set <code>contact_form_endpoint</code> in <code>hugo.toml</code> (see README). This notice is only shown on your computer; visitors see nothing until it is set.</p></div>
+{{ end }}

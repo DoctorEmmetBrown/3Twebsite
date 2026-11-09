@@ -10,6 +10,10 @@ summary: "Interested in our research, our platforms or in joining us? We would b
 - **Research projects.** We welcome academic and industrial collaborations around imaging, metals in medicine and theranostics.
 - **Students and postdocs.** We host interns, PhD students and postdoctoral researchers.
 
+## Send us a message
+
+{{< contact-form >}}
+
 ## Find us
 
 The team is based at the Institute for Advanced Biosciences, on the health campus of La Tronche, next to the Grenoble Alpes University Hospital. The MUSITOX platform is on the university campus.
