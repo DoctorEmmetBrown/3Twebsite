@@ -24,6 +24,8 @@ hugo server            # puis ouvrir http://localhost:1313
 | ajouter un article clé | `data/publications.yaml` |
 | mettre à jour la liste complète des publications | `python3 scripts/fetch_publications.py` (voir la section ORCID) |
 | ajouter un ORCID à un membre | `orcid:` dans `data/members.yaml` |
+| modifier la roue de l'accueil (images, libellés, positions) | `data/wheel.yaml` ; images dans `static/img/wheel/` |
+| inverser le sens des ondes animées | `assets/css/main.css`, `--wave-dir: 1` (vers la droite) ou `-1` (vers la gauche) |
 | changer les chiffres de l'accueil | `data/numbers.yaml` |
 | modifier les partenaires | `data/collaborators.yaml` |
 | modifier le texte d'un groupe | `content/research/*.md` |

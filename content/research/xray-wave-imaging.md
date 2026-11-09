@@ -3,6 +3,7 @@ title: "X-Ray Wave Imaging for Health"
 tagline: "Better see, better understand pathologies and their treatments in 3D."
 summary: "Phase-contrast and dark-field X-ray imaging, from the synchrotron to the laboratory and the clinic, for 3D exploration of unlabelled tissue."
 group: xwi
+art: waves
 weight: 20
 platforms: ["musitox"]
 site_url: "https://doctoremmetbrown.github.io/xray-wave-imaging/"

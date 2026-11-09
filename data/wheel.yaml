@@ -1,0 +1,26 @@
+# Roue de l'accueil (layouts/partials/wheel.html).
+# ring  : inner (techniques d'imagerie, anneau sombre) ou outer (applications, anneau clair)
+# angle : position en degrés, 0 = en haut, sens horaire
+# w, h  : taille de la vignette (en % de la largeur de la roue) ; l'image s'ajuste dedans
+# side  : côté du libellé par rapport à la vignette (t, b, l, r)
+# label : « | » force un retour à la ligne
+# Les images sont dans static/img/wheel/<id>.png
+center:
+  - Elucidating disease mechanisms
+  - Diagnostic imaging
+  - Theranostics (nano)vectors
+
+nodes:
+  # --- anneau intérieur : techniques ---
+  - {id: swir,              label: "Short Wave|Infra Red",            ring: inner, angle: 0,   w: 10.5,  h: 14,   side: r}
+  - {id: xray-fluorescence, label: "X-ray|Fluorescence",             ring: inner, angle: 90,  w: 12,   h: 15.5, side: b}
+  - {id: dark-field,        label: "X-ray Phase Contrast|Dark-field", ring: inner, angle: 180, w: 18,   h: 10.5,   side: b}
+  - {id: libs,              label: "Laser Induced Breakdown|Spectroscopy", ring: inner, angle: 270, w: 15, h: 15, side: t}
+  # --- anneau extérieur : applications ---
+  - {id: metallomic,         label: "Metallomic",                    ring: outer, angle: 0,     w: 24, h: 11, side: r}
+  - {id: virtual-histology,  label: "Virtual|Histology",             ring: outer, angle: 51.4,  w: 16, h: 11.5, side: b}
+  - {id: single-cell,        label: "Single cell",                   ring: outer, angle: 102.8, w: 9, h: 12,  side: b}
+  - {id: image-guided-surgery, label: "Image guided|surgery",        ring: outer, angle: 154.3, w: 8, h: 13.5, side: t}
+  - {id: functional-imaging, label: "Functional|Imaging",            ring: outer, angle: 205.7, w: 9, h: 13,  side: t}
+  - {id: bore-neutron,       label: "Boron neutron|capture|therapy", ring: outer, angle: 257.1, w: 8, h: 13.5, side: t}
+  - {id: cell-therapy,       label: "Cell Therapy|Monitoring",       ring: outer, angle: 308.6, w: 8.5,   h: 13.5, side: r}

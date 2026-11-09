@@ -12,6 +12,12 @@
 
 <div class="wrap layout g-{{ $g }}">
   <article class="prose">
+    {{ if eq .Params.art "waves" }}
+    <figure class="wave-figure">
+      {{ partial "hero-art.html" . }}
+      <figcaption>An X-ray wave crossing a sample: its amplitude drops (attenuation), its phase shifts (refraction) and it spreads (scattering).</figcaption>
+    </figure>
+    {{ end }}
     {{ .Content }}
   </article>
 
