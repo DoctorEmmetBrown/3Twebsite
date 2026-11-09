@@ -14,19 +14,11 @@
     </ul>
 
     {{ $members := site.Data.members }}
-    {{ range (site.GetPage "/research").Pages.ByWeight }}
-    {{ $g := .Params.group }}
-    <div class="team-group g-{{ $g }}">
-      <h2><a href="{{ .RelPermalink }}" style="color:inherit;text-decoration:none">{{ .Title }}</a></h2>
-      {{ $group := where $members "group" $g }}
-      <p class="subhead">Researchers, clinicians and engineers</p>
-      <ul class="people">{{ range $k := slice "lead" "staff" }}{{ range where $group "kind" $k }}{{ partial "person.html" . }}{{ end }}{{ end }}</ul>
-      {{ with where $group "kind" "junior" }}
-      <p class="subhead">Postdocs and PhD students</p>
-      <ul class="people">{{ range . }}{{ partial "person.html" . }}{{ end }}</ul>
-      {{ end }}
-    </div>
-    {{ end }}
+    {{ $current := where (where $members "kind" "ne" "alumni") "kind" "ne" "lead" }}
+    <p class="subhead">Members</p>
+    <ul class="people">{{ range sort $current "name" }}{{ partial "person.html" . }}{{ end }}</ul>
+    <p class="muted" style="margin-top:1rem;font-size:.9rem">The colour of each avatar shows the research group:
+      {{ range $i, $g := (site.GetPage "/research").Pages.ByWeight }}{{ if $i }}, {{ end }}<a href="{{ $g.RelPermalink }}">{{ $g.Title }}</a>{{ end }}.</p>
 
     {{ with where $members "kind" "alumni" }}
     <div class="team-group">

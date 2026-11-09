@@ -17,6 +17,7 @@ hugo server            # puis ouvrir http://localhost:1313
 | ajouter / retirer un membre | `data/members.yaml` (copier un bloc ; `group` = metals, xwi ou igs ; `kind` = lead, staff, junior, alumni) |
 | ajouter une photo | déposer le fichier dans `static/img/team/` et ajouter `photo: nom.jpg` au membre |
 | publier une actualité | `hugo new news/mon-titre.md`, rédiger, passer `draft: false` |
+| mettre un lien dans une actualité ou une page | Markdown : `[texte](https://…)` ; les liens externes s'ouvrent dans un nouvel onglet |
 | ajouter un projet | `data/projects.yaml` (la description est optionnelle) |
 | ajouter un article clé | `data/publications.yaml` |
 | mettre à jour la liste complète des publications | `python3 scripts/fetch_publications.py` (voir la section ORCID) |
