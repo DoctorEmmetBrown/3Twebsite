@@ -1,12 +1,20 @@
 {{- /* contexte : une entrée de data/members.yaml */ -}}
+{{- $p := . -}}
 {{- $initials := "" -}}
 {{- range first 2 (split .name " ") }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end -}}
+{{- $photo := "" -}}
+{{- with .photo }}{{ if fileExists (printf "static/img/team/%s" .) }}{{ $photo = . }}{{ end }}{{ end -}}
 <li class="person g-{{ .group }}{{ if eq .kind "lead" }} lead{{ end }}">
   <span class="avatar" aria-hidden="true">
-    {{- with .photo }}<img src="{{ printf "img/team/%s" . | relURL }}" alt="" loading="lazy">{{ else }}{{ $initials }}{{ end -}}
+    {{- if $photo }}<img src="{{ printf "img/team/%s" $photo | relURL }}" alt="" loading="lazy">{{ else }}{{ $initials }}{{ end -}}
   </span>
-  <span class="txt">
-    <strong>{{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</strong>
-    <span>{{ .role }}{{ if eq .kind "lead" }} · Team co-leader{{ end }}</span>
+  <strong class="name">{{ .name }}</strong>
+  <span class="role">{{ .role }}{{ if eq .kind "lead" }} · Team co-leader{{ end }}</span>
+  {{- if or .orcid .web .linkedin }}
+  <span class="links">
+    {{- with .orcid }}<a href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer" title="ORCID" aria-label="{{ $p.name }} on ORCID">{{ partial "icon.html" "orcid" }}</a>{{ end -}}
+    {{- with .web }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Website" aria-label="{{ $p.name }}, personal website">{{ partial "icon.html" "globe" }}</a>{{ end -}}
+    {{- with .linkedin }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="{{ $p.name }} on LinkedIn">{{ partial "icon.html" "linkedin" }}</a>{{ end -}}
   </span>
+  {{- end }}
 </li>

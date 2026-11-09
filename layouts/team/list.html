@@ -8,16 +8,19 @@
 </section>
 <section class="section">
   <div class="wrap">
-    <h2>Team co-leaders</h2>
+    {{ $members := site.Data.members }}
+    <h2>Permanent members</h2>
     <ul class="people" style="margin-top:1rem">
-      {{ range where site.Data.members "kind" "lead" }}{{ partial "person.html" . }}{{ end }}
+      {{ range where $members "kind" "lead" }}{{ partial "person.html" . }}{{ end }}
+      {{ range sort (where $members "kind" "staff") "name" }}{{ partial "person.html" . }}{{ end }}
     </ul>
 
-    {{ $members := site.Data.members }}
-    {{ $current := where (where $members "kind" "ne" "alumni") "kind" "ne" "lead" }}
-    <p class="subhead">Members</p>
-    <ul class="people">{{ range sort $current "name" }}{{ partial "person.html" . }}{{ end }}</ul>
-    <p class="muted" style="margin-top:1rem;font-size:.9rem">The colour of each avatar shows the research group:
+    {{ with where $members "kind" "junior" }}
+    <h2 style="margin-top:3rem">PhD students and postdocs</h2>
+    <ul class="people" style="margin-top:1rem">{{ range sort . "name" }}{{ partial "person.html" . }}{{ end }}</ul>
+    {{ end }}
+
+    <p class="muted" style="margin-top:1.2rem;font-size:.9rem">The colour of each avatar shows the research group:
       {{ range $i, $g := (site.GetPage "/research").Pages.ByWeight }}{{ if $i }}, {{ end }}<a href="{{ $g.RelPermalink }}">{{ $g.Title }}</a>{{ end }}.</p>
 
     {{ with where $members "kind" "alumni" }}
