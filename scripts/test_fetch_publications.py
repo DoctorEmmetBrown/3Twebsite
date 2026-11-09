@@ -124,9 +124,10 @@ class Membres(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             p = Path(d) / "m.yaml"
             p.write_text("# commentaire\n- name: Ada Lovelace\n  group: xwi\n  orcid: 0000-0001-0000-0001  # note\n"
-                         "- name: Bob\n  group: igs\n", encoding="utf-8")
+                         "- name: Bob\n  group: [igs, metals]\n", encoding="utf-8")
             people = fp.read_members(p)
-            self.assertEqual(people[0], {"name": "Ada Lovelace", "orcid": "0000-0001-0000-0001", "group": "xwi"})
+            self.assertEqual(people[0], {"name": "Ada Lovelace", "orcid": "0000-0001-0000-0001", "group": ["xwi"]})
+            self.assertEqual(people[1]["group"], ["igs", "metals"])
             self.assertEqual(people[1]["orcid"], "")
 
 

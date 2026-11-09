@@ -1,0 +1,4 @@
+{{- /* contexte : une entrée de members.yaml ; renvoie toujours une liste de groupes (group: xwi ou group: [xwi, igs]) */ -}}
+{{- $g := .group -}}
+{{- $r := cond (reflect.IsSlice $g) $g (slice $g) -}}
+{{- return $r -}}

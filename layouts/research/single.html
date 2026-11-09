@@ -16,13 +16,14 @@
   </article>
 
   <aside class="aside" aria-label="Group overview">
-    {{ $members := where site.Data.members "group" $g }}
+    {{ $members := slice }}
+    {{ range site.Data.members }}{{ if in (partial "member-groups.html" .) $g }}{{ $members = $members | append . }}{{ end }}{{ end }}
     <div class="panel">
       <h2>People</h2>
       <ul>
         {{ range $k := slice "lead" "staff" "junior" }}
           {{ range where $members "kind" $k }}
-          <li>{{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .name }}</a>{{ else }}<strong>{{ .name }}</strong>{{ end }}<small>{{ .role }}</small></li>
+          <li><strong>{{ .name }}</strong><small>{{ .role }}</small></li>
           {{ end }}
         {{ end }}
       </ul>

@@ -3,6 +3,7 @@
 # group : metals | xwi | igs          (voir content/research/*.md, paramètre "group")
 # kind  : lead | staff | junior | alumni
 #         lead = co-responsables ; junior = doctorants et postdocs ; alumni = anciens membres
+# group    : un groupe (group: xwi) ou deux (group: [xwi, igs]) ; le premier donne la couleur principale
 # photo    : nom d'un fichier placé dans static/img/team/ (ex. benoit-busser.jpg) ; sans fichier, les initiales s'affichent
 # orcid    : identifiant ORCID seul (0000-0000-0000-0000) ; sert au lien ORCID et au script des publications
 # web      : page web personnelle, adresse complète (facultatif)
@@ -16,7 +17,7 @@
 # --- Co-responsables ---
 - name: Lucie Sancey
   role: Research Director, CNRS
-  group: igs
+  group: [igs,metals]
   kind: lead
   orcid: 0000-0002-0084-3775
   photo: lucie-sancey.jpg
@@ -125,7 +126,7 @@
   role: Research Engineer, UGA
   group: xwi
   kind: staff
-  photo: manuel-fernandez-martinez.jpg
+  photo: fernandez-martinez-manuel.jpg
   web:
   linkedin:
 - name: Samy Kefs
@@ -167,6 +168,13 @@
   web:
   linkedin:
 
+- name: Cecile Pohar
+  role: Postdoc
+  group: xwi
+  kind: junior
+  photo: cecile-pohar.jpg
+  web:
+  linkedin:
 
 # --- Image-guided Surgery and Neutron Capture Therapy ---
 - name: Christol Fabre

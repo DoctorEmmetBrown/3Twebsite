@@ -15,6 +15,7 @@ hugo server            # puis ouvrir http://localhost:1313
 | Je veux… | Je modifie… |
 |---|---|
 | ajouter / retirer un membre | `data/members.yaml` (copier un bloc ; `group` = metals, xwi ou igs ; `kind` = lead ou staff : « Permanent members », junior : « PhD students and postdocs », alumni) |
+| mettre une personne dans deux groupes | `group: [xwi, igs]` dans `data/members.yaml` (le premier groupe donne la couleur) ; elle apparaît sur les deux pages de groupe |
 | ajouter une photo | déposer le fichier dans `static/img/team/` sous le nom indiqué par `photo:` du membre (ex. `benoit-busser.jpg`, carré de préférence, 400 px suffisent) ; sans fichier, ce sont les initiales qui s'affichent |
 | ajouter ORCID, site perso, LinkedIn | champs `orcid:` (identifiant seul), `web:` et `linkedin:` (adresse complète) du membre dans `data/members.yaml` |
 | publier une actualité | `hugo new news/mon-titre.md`, rédiger, passer `draft: false` |

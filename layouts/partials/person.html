@@ -1,10 +1,11 @@
 {{- /* contexte : une entrée de data/members.yaml */ -}}
 {{- $p := . -}}
+{{- $gs := partial "member-groups.html" . -}}
 {{- $initials := "" -}}
 {{- range first 2 (split .name " ") }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end -}}
 {{- $photo := "" -}}
 {{- with .photo }}{{ if fileExists (printf "static/img/team/%s" .) }}{{ $photo = . }}{{ end }}{{ end -}}
-<li class="person g-{{ .group }}{{ if eq .kind "lead" }} lead{{ end }}">
+<li class="person g-{{ index $gs 0 }}{{ with index $gs 1 }} g2-{{ . }}{{ end }}{{ if eq .kind "lead" }} lead{{ end }}">
   <span class="avatar" aria-hidden="true">
     {{- if $photo }}<img src="{{ printf "img/team/%s" $photo | relURL }}" alt="" loading="lazy">{{ else }}{{ $initials }}{{ end -}}
   </span>

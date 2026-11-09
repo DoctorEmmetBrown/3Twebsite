@@ -20,7 +20,7 @@
     <ul class="people" style="margin-top:1rem">{{ range sort . "name" }}{{ partial "person.html" . }}{{ end }}</ul>
     {{ end }}
 
-    <p class="muted" style="margin-top:1.2rem;font-size:.9rem">The colour of each avatar shows the research group:
+    <p class="muted" style="margin-top:1.2rem;font-size:.9rem">The colour of each avatar shows the research group (two rings: member of two groups):
       {{ range $i, $g := (site.GetPage "/research").Pages.ByWeight }}{{ if $i }}, {{ end }}<a href="{{ $g.RelPermalink }}">{{ $g.Title }}</a>{{ end }}.</p>
 
     {{ with where $members "kind" "alumni" }}

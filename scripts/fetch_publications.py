@@ -212,6 +212,12 @@ class Record:
 
 
 # ----------------------------------------------------------------------------- lecture des membres
+def parse_groups(v) -> list[str]:
+    """`xwi`, `[xwi, igs]` ou une vraie liste -> ["xwi", "igs"]."""
+    items = v if isinstance(v, (list, tuple, set)) else re.split(r"[,\s]+", (v or "").strip().strip("[]"))
+    return [x.strip("\"' ") for x in items if x.strip("\"' ")]
+
+
 def read_members(path: Path) -> list[dict]:
     """Lecture minimaliste de data/members.yaml (pas de dépendance PyYAML)."""
     people, cur = [], None
@@ -221,13 +227,13 @@ def read_members(path: Path) -> list[dict]:
         line = re.sub(r"\s+#.*$", "", raw).rstrip()
         m = re.match(r"^-\s+name:\s*(.+?)\s*$", line)
         if m:
-            cur = {"name": m.group(1).strip("\"'"), "orcid": "", "group": ""}
+            cur = {"name": m.group(1).strip("\"'"), "orcid": "", "group": []}
             people.append(cur)
             continue
         if cur is not None:
-            m = re.match(r"^\s+(orcid|group):\s*(\S+)\s*$", line)
+            m = re.match(r"^\s+(orcid|group):\s*(.+?)\s*$", line)
             if m:
-                cur[m.group(1)] = m.group(2).strip("\"'")
+                cur[m.group(1)] = parse_groups(m.group(2)) if m.group(1) == "group" else m.group(2).strip("\"'")
     return people
 
 
@@ -257,7 +263,7 @@ def parse_orcid_work(w: dict, group_dois: set[str], member: dict) -> Record:
                   doi=primary or (sorted(dois)[0] if dois else ""), dois=dois,
                   journal=((w.get("journal-title") or {}).get("value") or ""),
                   authors=contribs, url=((w.get("url") or {}).get("value") or ""),
-                  members={member["name"]}, groups={member["group"]} if member["group"] else set())
+                  members={member["name"]}, groups=set(parse_groups(member.get("group"))))
 
 
 def fetch_orcid(member: dict, fx: Fetcher) -> list[Record]:
@@ -481,7 +487,7 @@ def main(argv=None) -> int:
 
     people = [p for p in read_members(a.members) if p["orcid"]]
     seen = {p["orcid"] for p in people}
-    people += [{"name": o, "orcid": o, "group": ""} for o in cfg["extra_orcids"] if o not in seen]
+    people += [{"name": o, "orcid": o, "group": []} for o in cfg["extra_orcids"] if o not in seen]
     if not people:
         print("Aucun ORCID trouvé dans data/members.yaml (champ `orcid:`).", file=sys.stderr)
         return 1
