@@ -1,0 +1,37 @@
+name: Update publications from ORCID
+
+# Chaque lundi, relance scripts/fetch_publications.py, commit data/publications_all.json
+# s'il a changé, puis relance le déploiement du site.
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch publications
+        run: python3 scripts/fetch_publications.py
+      - name: Commit and redeploy if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/publications_all.json; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/publications_all.json
+          git commit -m "Update publications from ORCID"
+          git push
+          gh workflow run deploy.yml

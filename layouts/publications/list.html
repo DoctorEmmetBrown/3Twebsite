@@ -1,0 +1,60 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    <p class="kicker">Publications</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.summary }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap" style="max-width:52rem">
+    <h2>Selected papers</h2>
+    <ol class="pubs" style="margin-top:1rem">
+      {{ range site.Data.publications.articles }}
+      <li class="pub g-{{ .group }}">
+        <h3><a href="https://doi.org/{{ .doi }}" rel="noopener">{{ .title }}</a></h3>
+        <p><span class="tag">{{ if eq .group "metals" }}Metals in Medicine{{ else if eq .group "xwi" }}X-Ray Wave Imaging{{ else }}Surgery &amp; NCT{{ end }}</span>{{ .authors }}. <em>{{ .journal }}</em>, {{ .year }}.</p>
+      </li>
+      {{ end }}
+    </ol>
+
+    {{ with site.Data.publications_all }}
+    <h2 style="margin-top:3rem" id="all">All publications <span class="muted" style="font-weight:400">({{ .count }})</span></h2>
+    <p class="muted">Collected automatically from the ORCID profiles of the team members, duplicates removed. Updated {{ dateFormat "2 January 2006" .generated }}.</p>
+    <div class="filters" data-pubs-filters>
+      <label class="sr-only" for="pub-q">Search publications</label>
+      <input id="pub-q" type="search" placeholder="Search title, author, journal…" autocomplete="off">
+      <button type="button" class="chip on" data-group="">All</button>
+      <button type="button" class="chip" data-group="metals">Metals in Medicine</button>
+      <button type="button" class="chip" data-group="xwi">X-Ray Wave Imaging</button>
+      <button type="button" class="chip" data-group="igs">Surgery &amp; NCT</button>
+    </div>
+    <p class="muted" data-pubs-count aria-live="polite"></p>
+    <div data-pubs>
+      {{ range .years }}
+      <section data-year-block>
+        <h3 class="year-head">{{ if .year }}{{ .year }}{{ else }}Undated{{ end }}</h3>
+        <ol class="pubs compact-pubs">
+          {{ range .items }}
+          <li class="pub" data-groups="{{ delimit .groups " " }}" data-search="{{ lower (printf "%s %s %s %d" .title .authors .journal .year) }}">
+            <h4>{{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</h4>
+            <p>{{ with .authors_short }}{{ . }}. {{ end }}{{ with .journal }}<em>{{ . }}</em>{{ end }}{{ if eq .type "preprint" }} <span class="tag" style="--g:var(--muted);--gt:var(--muted)">Preprint</span>{{ end }}</p>
+          </li>
+          {{ end }}
+        </ol>
+      </section>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <h2 style="margin-top:3rem">Patents</h2>
+    <ul class="pubs" style="margin-top:1rem">
+      {{ range site.Data.publications.patents }}
+      <li class="pub"><h3>{{ .title }}</h3><p>{{ .ref }}</p></li>
+      {{ end }}
+    </ul>
+
+    <div class="prose" style="margin-top:3rem">{{ .Content }}</div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,6 @@
+public/
+resources/
+.hugo_build.lock
+.DS_Store
+scripts/.cache/
+scripts/__pycache__/

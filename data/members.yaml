@@ -1,0 +1,140 @@
+# Membres de l'équipe 3T. Pour ajouter quelqu'un : copier un bloc, adapter, enregistrer.
+#
+# group : metals | xwi | igs          (voir content/research/*.md, paramètre "group")
+# kind  : lead | staff | junior | alumni
+#         lead = co-responsables ; junior = doctorants et postdocs ; alumni = anciens membres
+# photo : nom d'un fichier placé dans static/img/team/ (facultatif, sinon initiales)
+# url   : page personnelle (facultatif)
+# orcid : identifiant ORCID (facultatif) ; lu par scripts/fetch_publications.py pour la liste des publications
+#
+# Sources : présentation HCERES (diapo 4) et dossier SAB 2025. Décisions du 2 nov. 2026 :
+# G. Bettega, F. Dalonneau, C. Charrat et E. Fontaine non affichés ; S. Kefs postdoc ; C. Magnin alumni.
+
+# --- Co-responsables ---
+- name: Lucie Sancey
+  role: Research Director, CNRS
+  group: igs
+  kind: lead
+  orcid: 0000-0002-0084-3775
+  url: https://orcid.org/0000-0002-0084-3775
+
+- name: Emmanuel Brun
+  role: Research Director, Inserm
+  group: xwi
+  kind: lead
+  orcid: 0000-0002-0332-4903
+  url: https://doctoremmetbrown.github.io/xray-wave-imaging/
+
+# --- Metals in Medicine ---
+- name: Benoit Busser
+  role: University Professor – Hospital Physician (PU-PH), UGA · IUF
+  group: metals
+  kind: staff
+  orcid: 0000-0002-9425-1577
+  url: https://orcid.org/0000-0002-9425-1577
+- name: Sylvain Bohic
+  role: Research Scientist, Inserm
+  group: metals
+  kind: staff
+  orcid: 0000-0001-6355-7592
+  url: https://orcid.org/0000-0001-6355-7592
+- name: Julie Charles
+  role: University Professor – Hospital Physician (PU-PH), UGA
+  group: metals
+  kind: staff
+  orcid: 0000-0003-4667-6009
+  url: https://orcid.org/0000-0003-4667-6009
+- name: Aude Belbezier
+  role: Assistant Head of Clinic, UGA
+  group: metals
+  kind: staff
+  orcid: 0000-0002-6505-6596
+  url: https://orcid.org/0000-0002-6505-6596
+- name: Stéphane Mouret
+  role: Clinical Research Coordinator, CHU Grenoble Alpes
+  group: metals
+  kind: staff
+  orcid: 0000-0003-3880-973X
+  url: https://orcid.org/0000-0003-3880-973X
+- name: Erwan Dupont
+  role: Engineer, Bio-LIBS platform
+  group: metals
+  kind: junior
+- name: Ronald Salas-Araya
+  role: PhD student
+  group: metals
+  kind: junior
+
+# --- X-Ray Wave Imaging for Health ---
+- name: Sam Bayat
+  role: University Professor – Hospital Physician (PU-PH), UGA
+  group: xwi
+  kind: staff
+  orcid: 0000-0002-8565-0293
+  url: https://orcid.org/0000-0002-8565-0293
+- name: François Le Naour
+  role: Research Director, Inserm
+  group: xwi
+  kind: staff
+  orcid: 0000-0002-2217-2984
+  url: https://orcid.org/0000-0002-2217-2984
+- name: Cécile Olivier
+  role: Engineer, Inserm
+  group: xwi
+  kind: staff
+  orcid: 0009-0003-1041-4231
+  url: https://orcid.org/0009-0003-1041-4231
+- name: Pierre-Yves Rabattu
+  role: Associate Professor – Hospital Physician (MCU-PH)
+  group: xwi
+  kind: staff
+- name: Manuel Fernández Martínez
+  role: Research Engineer, UGA
+  group: xwi
+  kind: staff
+- name: Samy Kefs
+  role: Postdoctoral researcher
+  group: xwi
+  kind: junior
+- name: Kim Bazot
+  role: PhD student
+  group: xwi
+  kind: junior
+
+# --- Image-guided Surgery and Neutron Capture Therapy ---
+- name: Christol Fabre
+  role: Hospital-University Practitioner (PHU), UGA
+  group: igs
+  kind: staff
+  orcid: 0000-0001-5269-1403
+  url: https://orcid.org/0000-0001-5269-1403
+- name: Rodolphe Lartizien
+  role: Hospital Physician, Annecy Genevois Hospital
+  group: igs
+  kind: staff
+  orcid: 0000-0002-9136-2300
+  url: https://orcid.org/0000-0002-9136-2300
+- name: Matthieu Olivetto
+  role: Hospital Physician, Annecy Genevois Hospital
+  group: igs
+  kind: staff
+  orcid: 0000-0002-0135-3081
+  url: https://orcid.org/0000-0002-0135-3081
+- name: Ana Bozovic
+  role: PhD student
+  group: igs
+  kind: junior
+- name: Magdalena Stoykova
+  role: PhD student
+  group: igs
+  kind: junior
+- name: Dayar Hadji
+  role: PhD student
+  group: igs
+  kind: junior
+
+# --- Alumni ---
+- name: Clara Magnin
+  role: Former research engineer, UGA
+  group: xwi
+  kind: alumni

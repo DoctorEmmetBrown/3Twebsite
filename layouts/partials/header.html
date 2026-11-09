@@ -1,0 +1,17 @@
+{{ $cur := . }}
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="3T, Translational Theranostics Team: home">
+      <span class="mark" aria-hidden="true">3T</span>
+      <span class="brand-text"><strong>Translational Theranostics Team</strong><small>{{ site.Params.institute }} · Grenoble</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <ul>
+        {{- range site.Menus.main }}
+        <li><a href="{{ .URL }}"{{ if or ($cur.IsMenuCurrent "main" .) ($cur.HasMenuCurrent "main" .) }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>

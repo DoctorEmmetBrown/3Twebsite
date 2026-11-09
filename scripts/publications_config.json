@@ -1,0 +1,10 @@
+{
+  "since": 2019,
+  "exclude_types": ["data-set"],
+  "exclude_dois": [],
+  "exclude_title_regex": [],
+  "extra_orcids": [],
+  "mailto": "",
+  "fuzzy_merge": 0.94,
+  "fuzzy_review": 0.85
+}

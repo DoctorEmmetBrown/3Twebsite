@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    {{ with .Params.kicker }}<p class="kicker">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+<div class="wrap layout single">
+  <article class="prose">
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}

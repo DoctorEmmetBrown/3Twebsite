@@ -1,0 +1,14 @@
+# Chiffres clés de la page d'accueil (source : HCERES, bilan 2019-aujourd'hui).
+# Modifier "value" et "label" ; l'ordre d'affichage est celui du fichier.
+- value: "139"
+  label: publications since 2019
+- value: "5"
+  label: patents, one of them licensed
+- value: "14"
+  label: PhD theses defended
+- value: "9"
+  label: PhD students in progress
+- value: "7"
+  label: postdoctoral researchers hosted
+- value: "2"
+  label: "unique platforms: MUSITOX and Bio-LIBS"

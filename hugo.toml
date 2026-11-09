@@ -1,0 +1,47 @@
+baseURL = "/"
+languageCode = "en"
+title = "Translational Theranostics Team (3T)"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  tagline = "Seeing, measuring and treating disease: from X-ray waves and metals to theranostic compounds."
+  description = "The Translational Theranostics Team (3T) at the Institute for Advanced Biosciences (IAB), Grenoble: X-ray wave imaging, metals in medicine, image-guided surgery and neutron capture therapy."
+  institute = "Institute for Advanced Biosciences"
+  institute_url = "https://iab-grenoble.fr"
+  affiliations = "UGA · Inserm U1209 · CNRS UMR 5309"
+  address = ["Institute for Advanced Biosciences", "Site Santé, Allée des Alpes", "38700 La Tronche, France"]
+  # Site of the X-ray Wave Imaging group (subgroup of 3T)
+  xwi_url = "https://doctoremmetbrown.github.io/xray-wave-imaging/"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = "Research"
+    pageRef = "/research"
+    weight = 10
+  [[menus.main]]
+    name = "Platforms"
+    pageRef = "/platforms"
+    weight = 20
+  [[menus.main]]
+    name = "Projects"
+    pageRef = "/projects"
+    weight = 30
+  [[menus.main]]
+    name = "Team"
+    pageRef = "/team"
+    weight = 40
+  [[menus.main]]
+    name = "News"
+    pageRef = "/news"
+    weight = 50
+  [[menus.main]]
+    name = "Contact"
+    pageRef = "/contact"
+    weight = 60
+
+[minify]
+  minifyOutput = true

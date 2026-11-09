@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    <p class="crumbs"><a href="{{ "news/" | relURL }}">News</a> /</p>
+    <p class="kicker"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2006" }}</time></p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+<div class="wrap layout single"><article class="prose">{{ .Content }}</article></div>
+{{ end }}

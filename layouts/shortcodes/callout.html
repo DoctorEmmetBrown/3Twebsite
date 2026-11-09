@@ -1,0 +1,4 @@
+<div class="callout">
+{{ with .Get "title" }}<p><strong>{{ . }}</strong></p>{{ end }}
+{{ .Inner | markdownify }}
+</div>

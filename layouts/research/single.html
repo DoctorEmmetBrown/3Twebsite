@@ -1,0 +1,70 @@
+{{ define "main" }}
+{{ $g := .Params.group }}
+<section class="pagehead has-group g-{{ $g }}">
+  <div class="wrap">
+    <p class="crumbs"><a href="{{ "research/" | relURL }}">Research</a> /</p>
+    <span class="icon">{{ partial "icon.html" $g }}</span>
+    <p class="kicker">Research group</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.tagline }}</p>
+  </div>
+</section>
+
+<div class="wrap layout g-{{ $g }}">
+  <article class="prose">
+    {{ .Content }}
+  </article>
+
+  <aside class="aside" aria-label="Group overview">
+    {{ $members := where site.Data.members "group" $g }}
+    <div class="panel">
+      <h2>People</h2>
+      <ul>
+        {{ range $k := slice "lead" "staff" "junior" }}
+          {{ range where $members "kind" $k }}
+          <li>{{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .name }}</a>{{ else }}<strong>{{ .name }}</strong>{{ end }}<small>{{ .role }}</small></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+
+    {{ with .Params.platforms }}
+    <div class="panel">
+      <h2>Platforms</h2>
+      <ul>
+        {{ range . }}{{ with site.GetPage (printf "/platforms/%s" .) }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><small>{{ .Params.summary }}</small></li>
+        {{ end }}{{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ $projects := where site.Data.projects "group" $g }}
+    {{ with $projects }}
+    <div class="panel">
+      <h2>Projects</h2>
+      <ul>
+        {{ range . }}<li><a href="{{ "projects/" | relURL }}#{{ .name | anchorize }}">{{ .name }}</a><small>{{ .funder }}</small></li>{{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ $pubs := where site.Data.publications.articles "group" $g }}
+    {{ with $pubs }}
+    <div class="panel">
+      <h2>Selected papers</h2>
+      <ul>
+        {{ range . }}<li><a href="https://doi.org/{{ .doi }}" rel="noopener">{{ .title }}</a><small>{{ .journal }}, {{ .year }}</small></li>{{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ with .Params.site_url }}
+    <div class="panel">
+      <h2>Group website</h2>
+      <p style="margin:0"><a href="{{ . }}" rel="noopener">{{ $.Params.site_label }} {{ partial "icon.html" "ext" }}</a></p>
+    </div>
+    {{ end }}
+  </aside>
+</div>
+{{ end }}

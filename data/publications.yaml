@@ -1,0 +1,72 @@
+# Articles clés (sélection du dossier SAB 2025, 10 maximum).
+# group : metals | xwi | igs  -> l'article apparaît aussi sur la page du groupe.
+# doi sans le préfixe https://doi.org/
+articles:
+  - authors: "V. Gardette, L. Sancey, … B. Busser, V. Motto-Ros"
+    title: "Quantifying titanium exposure in lung tissues: a novel LIBS elemental imaging-based analytical framework for biomedical applications"
+    journal: Small Science
+    year: 2024
+    doi: 10.1002/smsc.202300307
+    group: metals
+  - authors: "M. Bendellaa, C. Cave, … B. Busser, L. Sancey"
+    title: "WazaGaY: an innovative aza-BODIPY-derived near-infrared fluorescent probe for enhanced tumor imaging"
+    journal: Journal of Medicinal Chemistry
+    year: 2024
+    doi: 10.1021/acs.jmedchem.4c01435
+    group: igs
+  - authors: "A. Coilly, C. Desterke, … C. Guettier, F. Le Naour"
+    title: "Clinical application of infrared spectroscopy in liver transplantation for rapid assessment of lipid content in liver graft"
+    journal: Laboratory Investigation
+    year: 2024
+    doi: 10.1016/j.labinv.2024.102110
+    group: xwi
+  - authors: "M. Chourrout, C. Sandt, … E. Brun, S. Bohic, F. Chauveau"
+    title: "Why are amyloid-β plaques detected by X-ray phase-contrast imaging?"
+    journal: Acta Biomaterialia
+    year: 2023
+    doi: 10.1016/j.actbio.2023.07.046
+    group: xwi
+  - authors: "S. Bayat, L. Broche, … M. Paiva, S. Verbanck"
+    title: "Fractal analysis reveals functional unit of ventilation in the lung"
+    journal: The Journal of Physiology
+    year: 2021
+    doi: 10.1113/JP282093
+    group: xwi
+  - authors: "L. Quénot, H. Rougé-Labriet, S. Bohic, S. Berujon, E. Brun"
+    title: "Implicit tracking approach for X-ray phase-contrast imaging with a random mask and a conventional system"
+    journal: Optica
+    year: 2021
+    doi: 10.1364/OPTICA.434954
+    group: xwi
+  - authors: "A. Godard, G. Kalot, … J.-L. Coll, F. Denat, E. Bodio, C. Goze, L. Sancey"
+    title: "Water-soluble aza-BODIPYs: biocompatible organic dyes for high contrast in vivo NIR-II imaging"
+    journal: Bioconjugate Chemistry
+    year: 2020
+    doi: 10.1021/acs.bioconjchem.0c00175
+    group: igs
+  - authors: "J. Charles, L. Chaperot, … A. Khammari, B. Dreno, M.-T. Leccia, J. Plumas"
+    title: "An innovative plasmacytoid dendritic cell line-based cancer vaccine primes and expands antitumor T-cells in melanoma patients in a first-in-human trial"
+    journal: Oncoimmunology
+    year: 2020
+    doi: 10.1080/2162402X.2020.1738812
+    group: metals
+  - authors: "A.-L. Bulin, M. Broekgaarden, … S. Bohic, L. Sancey, H. Elleaume"
+    title: "Radiation dose-enhancement is a potent radiotherapeutic effect of rare-earth composite nanoscintillators in preclinical models of glioblastoma"
+    journal: Advanced Science
+    year: 2020
+    doi: 10.1002/advs.202001675
+    group: igs
+  - authors: "F. Fus, Y. Yang, … P. Cloetens, G. Jaouen, S. Bohic"
+    title: "2D and 3D correlative X-ray fluorescence nanoanalysis contributing to reveal the path of a metallodrug, a metallocifen to treat triple-negative breast cancer"
+    journal: Angewandte Chemie International Edition
+    year: 2019
+    doi: 10.1002/anie.201812336
+    group: metals
+
+patents:
+  - title: "Calix[4]arenes with high anticancer activity"
+    ref: "EP23305100.2 / WO 2024/156819 A1 (2023)"
+  - title: "Imaging device, imaging or material characterisation apparatus comprising it, and imaging method"
+    ref: "FR2312651 (2023)"
+  - title: "Use of aza-BODIPY fluorophore compounds as far-infrared contrast agents"
+    ref: "EP19315089.3 / WO 2021/023731 (2019)"

@@ -1,0 +1,54 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    <p class="kicker">Research</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.summary }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cards">
+      {{ range .Pages.ByWeight }}
+      <a class="card g-{{ .Params.group }}" href="{{ .RelPermalink }}">
+        <span class="icon">{{ partial "icon.html" .Params.group }}</span>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.summary }}</p>
+        <span class="more">Explore {{ partial "icon.html" "arrow" }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Approach</p>
+      <h2>Methods developed, questions answered</h2>
+      <p>We develop the methods ourselves and apply them to real biomedical questions, one tissue at a time and across scales.</p>
+    </div>
+    <div class="mapping">
+      <div>
+        <h3>Methodological development</h3>
+        <ul class="logos">{{ range site.Data.approach.methods }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div>
+        <h3>Application to biomedical concerns</h3>
+        <ul class="logos">{{ range site.Data.approach.applications }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split wide-right">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    {{ partial "synergy-block.html" . }}
+  </div>
+</section>
+{{ end }}

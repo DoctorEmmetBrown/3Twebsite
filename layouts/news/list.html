@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    <p class="kicker">News</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.summary }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap" style="max-width:52rem">
+    <ul class="news-list">
+      {{ range .Pages.ByDate.Reverse }}
+      <li class="news-item">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2006" }}</time>
+        <div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Params.summary }}</p></div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

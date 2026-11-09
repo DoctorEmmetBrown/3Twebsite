@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>Translational Theranostics Team</h2>
+        <address>
+          {{ range site.Params.address }}{{ . }}<br>{{ end }}
+        </address>
+        <p style="margin-top:.8rem">{{ site.Params.affiliations }}</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          {{- range site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+      <div>
+        <h2>Links</h2>
+        <ul>
+          <li><a href="{{ site.Params.institute_url }}" rel="noopener">{{ site.Params.institute }}</a></li>
+          <li><a href="{{ site.Params.xwi_url }}" rel="noopener">X-ray Wave Imaging group</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">© {{ now.Year }} Translational Theranostics Team (3T), {{ site.Params.institute }}. Built with <a href="https://gohugo.io">Hugo</a>.</p>
+  </div>
+</footer>

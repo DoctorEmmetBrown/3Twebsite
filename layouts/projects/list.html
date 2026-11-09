@@ -1,0 +1,34 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    <p class="kicker">Projects</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.summary }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    {{ $all := site.Data.projects }}
+    <div class="cards">
+      {{ range $all }}{{ if .summary }}
+      <article class="card project g-{{ .group }}" id="{{ .name | anchorize }}">
+        <span>{{ if .coordinated }}<span class="badge">Coordinated by 3T</span>{{ end }}</span>
+        <h3>{{ .name }}</h3>
+        <p class="funder">{{ .funder }}</p>
+        <p style="color:var(--ink)">{{ .summary }}</p>
+        {{ with .partners }}<p class="partners"><b>Partners:</b> {{ . }}</p>{{ end }}
+        {{ with .url }}<a class="more" href="{{ . | relURL }}">Learn more {{ partial "icon.html" "arrow" }}</a>{{ end }}
+      </article>
+      {{ end }}{{ end }}
+    </div>
+
+    <h2 style="margin-top:3rem">Other funded projects</h2>
+    <ul class="compact">
+      {{ range $all }}{{ if not .summary }}
+      <li class="g-{{ .group }}" id="{{ .name | anchorize }}"><strong>{{ .name }}</strong><small>{{ .funder }}{{ if .coordinated }} · coordinated by 3T{{ end }}</small></li>
+      {{ end }}{{ end }}
+    </ul>
+    <div class="prose" style="margin-top:2rem">{{ .Content }}</div>
+  </div>
+</section>
+{{ end }}

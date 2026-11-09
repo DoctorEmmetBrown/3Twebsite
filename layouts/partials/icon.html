@@ -1,0 +1,12 @@
+{{- $n := . -}}
+{{- if eq $n "metals" -}}
+<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="3.4" fill="currentColor" stroke="none"/><ellipse cx="24" cy="24" rx="19" ry="7.5"/><ellipse cx="24" cy="24" rx="19" ry="7.5" transform="rotate(60 24 24)"/><ellipse cx="24" cy="24" rx="19" ry="7.5" transform="rotate(120 24 24)"/></svg>
+{{- else if eq $n "xwi" -}}
+<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 24c4 0 4-12 8-12s4 24 8 24 4-24 8-24 4 24 8 24 4-12 8-12"/></svg>
+{{- else if eq $n "igs" -}}
+<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="15"/><circle cx="24" cy="24" r="6.5"/><circle cx="24" cy="24" r="1.6" fill="currentColor"/><path d="M24 3v8M24 37v8M3 24h8M37 24h8"/></svg>
+{{- else if eq $n "arrow" -}}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+{{- else if eq $n "ext" -}}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+{{- end -}}

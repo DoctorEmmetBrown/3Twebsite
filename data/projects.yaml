@@ -1,0 +1,80 @@
+# Projets financés. Champs :
+#   name, funder (obligatoires)
+#   coordinated: true  -> badge « Coordinated by 3T »
+#   group: metals | xwi | igs | all  (couleur du filet)
+#   summary, partners, url : facultatifs (affichés seulement s'ils existent)
+# Source : frise « Timeline & Fundings » du dossier HCERES. Descriptions à enrichir.
+
+- name: MUSITOX
+  funder: Idex Université Grenoble Alpes (CDP), then MUSITOX Platform
+  coordinated: true
+  group: xwi
+  summary: The world's first wave-based imaging platform using conventional X-ray sources, bringing phase-contrast and dark-field imaging from the synchrotron to the laboratory.
+  url: /platforms/musitox/
+
+- name: ROOTS
+  funder: ANR (PRC)
+  coordinated: true
+  group: xwi
+  summary: Phase-contrast imaging for oral healthcare, comparing conventional cone-beam CT with phase-contrast CT of teeth, gingiva, neurovascular bundles and skin layers.
+  partners: AP-HP (Benjamin Salmon) · CarMeN (M. Wiart, C. Capdeville) · Université de Toulouse (P. Monsarrat, P. Kemoun)
+
+- name: DREAMLAND
+  funder: ANR (PRC)
+  group: xwi
+  summary: Multi-scale virtual histology of human fetal organs, combining synchrotron X-ray phase-contrast tomography, MRI and histology.
+
+- name: LINX
+  funder: Inserm International Research Project
+  coordinated: true
+  group: xwi
+  summary: International research project on X-ray phase imaging with Monash University and the University of Canterbury.
+  partners: Monash University (K. Morgan, D. Paganin) · University of Canterbury (K. Pavlov)
+
+- name: arXimed
+  funder: Linksium (SATT Grenoble Alpes), spin-off
+  coordinated: true
+  group: xwi
+  summary: Technology transfer of wave-based X-ray imaging towards clinical systems, starting with dental and maxillofacial imaging. Grand Prix of the i-PhD innovation contest.
+  url: https://doctoremmetbrown.github.io/xray-wave-imaging/
+
+- name: LADY
+  funder: ANR (PRC)
+  coordinated: true
+  group: xwi
+
+- name: PROBORE
+  funder: CNRS (MITI)
+  coordinated: true
+  group: igs
+
+- name: IUF Junior
+  funder: Institut Universitaire de France
+  coordinated: true
+  group: metals
+
+- name: Ulbonir
+  funder: ANR (PRC)
+  group: igs
+
+- name: Big_T-ReX
+  funder: ANR (PRC)
+  group: igs
+
+- name: Prelude
+  funder: MIAI (phase reconstruction)
+  group: xwi
+
+- name: GeoSuperRes
+  funder: MIAI (super-resolution)
+  group: xwi
+
+- name: FANFARES
+  funder: MIAI chair
+  group: xwi
+  summary: Artificial intelligence chair of MIAI Grenoble Alpes, co-held with CREATIS (INSA Lyon) and CEA IRIG.
+
+- name: Czech Ministry of Health grant
+  funder: Czech Ministry of Health
+  group: igs
+  summary: Boron neutron capture therapy and theranostic formulations, with Czech partners.

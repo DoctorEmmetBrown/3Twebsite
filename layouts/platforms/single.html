@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ $g := .Params.group }}
+<section class="pagehead has-group g-{{ $g }}">
+  <div class="wrap">
+    <p class="crumbs"><a href="{{ "platforms/" | relURL }}">Platforms</a> /</p>
+    <p class="kicker">Platform</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.tagline }}</p>
+  </div>
+</section>
+<div class="wrap layout g-{{ $g }}">
+  <article class="prose">{{ .Content }}</article>
+  <aside class="aside" aria-label="Platform facts">
+    {{ with .Params.facts }}
+    <div class="panel">
+      <h2>At a glance</h2>
+      <ul>{{ range . }}<li><strong>{{ .label }}</strong><small>{{ .value }}</small></li>{{ end }}</ul>
+    </div>
+    {{ end }}
+    {{ with .Params.contact }}
+    <div class="panel">
+      <h2>Access and collaboration</h2>
+      <p style="margin:0">{{ . | markdownify }}</p>
+    </div>
+    {{ end }}
+  </aside>
+</div>
+{{ end }}

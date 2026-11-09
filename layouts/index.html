@@ -1,0 +1,129 @@
+{{ define "main" }}
+<section class="hero">
+  {{ partial "bars.html" . }}
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">{{ site.Params.institute }} · Grenoble</p>
+      <h1>Translational <span>Theranostics</span> Team</h1>
+      <p class="lead">{{ site.Params.tagline }}</p>
+      <ul class="chips" aria-label="Keywords">
+        {{ range .Params.keywords }}<li class="chip">{{ . }}</li>{{ end }}
+      </ul>
+      <div class="btns">
+        <a class="btn" href="{{ "research/" | relURL }}">Our research {{ partial "icon.html" "arrow" }}</a>
+        <a class="btn ghost" href="{{ "team/" | relURL }}">Meet the team</a>
+      </div>
+    </div>
+    {{ partial "hero-art.html" . }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">What drives us</p>
+      <h2>Three objectives, one translational continuum</h2>
+      <p>From the bench to the bedside, we work where physics, chemistry and medicine meet, with clinicians in the team.</p>
+    </div>
+    <ol class="objectives">
+      {{ range .Params.objectives }}
+      <li><strong>{{ .title }}</strong><span>{{ .text }}</span></li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Research</p>
+      <h2>Three groups</h2>
+    </div>
+    <div class="cards">
+      {{ range (site.GetPage "/research").Pages.ByWeight }}
+      <a class="card g-{{ .Params.group }}" href="{{ .RelPermalink }}">
+        <span class="icon">{{ partial "icon.html" .Params.group }}</span>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.summary }}</p>
+        <span class="more">Explore {{ partial "icon.html" "arrow" }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split wide-right">
+    <div>
+      <p class="kicker">Better together</p>
+      <h2>Each group feeds the others</h2>
+      <p>Molecular probes designed in one group are localised in cells and tissues by another; contrast mechanisms understood with X-ray waves guide the analysis of metals; contrast agents are tested at the scale of the whole organ. This loop is what makes the team translational.</p>
+      <p><a href="{{ "research/" | relURL }}">See how it fits together {{ partial "icon.html" "arrow" }}</a></p>
+    </div>
+    {{ partial "synergy-block.html" . }}
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">In numbers</p>
+      <h2>A productive, well-connected team</h2>
+    </div>
+    <ul class="numbers">
+      {{ range site.Data.numbers }}<li><strong>{{ .value }}</strong><span>{{ .label }}</span></li>{{ end }}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Unique instruments</p>
+      <h2>Platforms open to the community</h2>
+    </div>
+    <div class="cards">
+      {{ range (site.GetPage "/platforms").Pages.ByWeight }}
+      <a class="card g-{{ .Params.group }}" href="{{ .RelPermalink }}">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.summary }}</p>
+        <span class="more">Learn more {{ partial "icon.html" "arrow" }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ $news := first 3 ((where site.RegularPages "Section" "news").ByDate.Reverse) }}
+{{ with $news }}
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">News</p>
+      <h2>Latest from the team</h2>
+    </div>
+    <ul class="news-list">
+      {{ range . }}
+      <li class="news-item">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2006" }}</time>
+        <div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Params.summary }}</p></div>
+      </li>
+      {{ end }}
+    </ul>
+    <p style="margin-top:1.2rem"><a href="{{ "news/" | relURL }}">All news {{ partial "icon.html" "arrow" }}</a></p>
+  </div>
+</section>
+{{ end }}
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Collaborations</p>
+      <h2>Working with partners worldwide</h2>
+    </div>
+    <ul class="logos">
+      {{ range site.Data.collaborators }}<li>{{ . }}</li>{{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

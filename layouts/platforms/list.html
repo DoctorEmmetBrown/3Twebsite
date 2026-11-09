@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    <p class="kicker">Platforms</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.summary }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="cards">
+      {{ range .Pages.ByWeight }}
+      <a class="card g-{{ .Params.group }}" href="{{ .RelPermalink }}">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.summary }}</p>
+        <span class="more">Learn more {{ partial "icon.html" "arrow" }}</span>
+      </a>
+      {{ end }}
+    </div>
+    <div class="prose" style="margin-top:2.5rem">{{ .Content }}</div>
+  </div>
+</section>
+{{ end }}

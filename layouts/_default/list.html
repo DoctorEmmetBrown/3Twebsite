@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+<div class="wrap layout single">
+  <article class="prose">
+    {{ .Content }}
+    <ul>{{ range .Pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+  </article>
+</div>
+{{ end }}

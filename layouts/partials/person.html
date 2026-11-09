@@ -1,0 +1,12 @@
+{{- /* contexte : une entrée de data/members.yaml */ -}}
+{{- $initials := "" -}}
+{{- range first 2 (split .name " ") }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end -}}
+<li class="person g-{{ .group }}{{ if eq .kind "lead" }} lead{{ end }}">
+  <span class="avatar" aria-hidden="true">
+    {{- with .photo }}<img src="{{ printf "img/team/%s" . | relURL }}" alt="" loading="lazy">{{ else }}{{ $initials }}{{ end -}}
+  </span>
+  <span class="txt">
+    <strong>{{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</strong>
+    <span>{{ .role }}{{ if eq .kind "lead" }} · Team co-leader{{ end }}</span>
+  </span>
+</li>

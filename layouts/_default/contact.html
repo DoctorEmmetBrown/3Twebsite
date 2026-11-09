@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="pagehead">
+  <div class="wrap">
+    <p class="kicker">Contact</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+<div class="wrap layout">
+  <article class="prose">{{ .Content }}</article>
+  <aside class="aside">
+    <div class="panel">
+      <h2>Address</h2>
+      <address style="font-style:normal">{{ range site.Params.address }}{{ . }}<br>{{ end }}</address>
+      <p style="margin:.8rem 0 0"><small>{{ site.Params.affiliations }}</small></p>
+    </div>
+    {{ with site.Params.contact_email }}
+    <div class="panel"><h2>Email</h2><p style="margin:0"><a href="mailto:{{ . }}">{{ . }}</a></p></div>
+    {{ end }}
+    <div class="panel">
+      <h2>Team co-leaders</h2>
+      <ul>
+        {{ range where site.Data.members "kind" "lead" }}<li>{{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .name }}</a>{{ else }}<strong>{{ .name }}</strong>{{ end }}<small>{{ .role }}</small></li>{{ end }}
+      </ul>
+    </div>
+  </aside>
+</div>
+{{ end }}
