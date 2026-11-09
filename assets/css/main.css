@@ -136,6 +136,8 @@ p { margin: 0 0 1em; }
 .hero-art .sample { fill: var(--surface); stroke: var(--line); stroke-width: 2; }
 .hero-art .sample-in { fill: currentColor; opacity: .18; }
 .hero-art .art-label { font: 600 14px var(--head); fill: var(--muted); }
+.hero-art .art-note { font: 500 12px var(--body, inherit); fill: var(--muted); }
+.hero-art .wv.ref { stroke-dasharray: 1 7; stroke-width: 3.2; opacity: .6; }
 /* sens de propagation des ondes : --wave-dir: 1 = de gauche à droite, -1 = de droite à gauche */
 .hero-art { --wave-dir: 1; }
 @keyframes drift { to { transform: translateX(calc(var(--wave-dir) * var(--p, 52px))); } }
@@ -335,29 +337,33 @@ a > svg { width: 1.05em; height: 1.05em; vertical-align: -.18em; }
 }
 .wheel-core ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1cqw; color: #1d2b27; font: 600 clamp(10px, 2.55cqw, 15px)/1.22 var(--head); text-align: center; }
 .wheel-core li + li::before { content: ""; display: block; width: 2.4cqw; height: .5cqw; border-radius: 9px; background: var(--brand); margin: 0 auto 1.1cqw; }
-.node { position: absolute; margin: 0; transform: translate(-50%, -50%); animation: node-pop .7s cubic-bezier(.2, .8, .25, 1) both; animation-delay: calc(var(--i) * 70ms + 150ms); }
-.node .tile {
-  display: block; width: var(--w); height: var(--h); padding: .55cqw; box-sizing: border-box; border-radius: 1.8cqw;
-  background: rgba(255, 255, 255, .93); box-shadow: 0 6px 14px -6px rgba(0, 0, 0, .5); transition: transform .25s ease, box-shadow .25s ease;
-}
-.node img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.node:hover .tile, .node:focus-within .tile { transform: translateY(-.5cqw) scale(1.08); box-shadow: 0 12px 20px -8px rgba(0, 0, 0, .55); }
-.node figcaption {
+.node { position: absolute; margin: 0; display: block; color: inherit; text-decoration: none; transform: translate(-50%, -50%); animation: node-pop .7s cubic-bezier(.2, .8, .25, 1) both; animation-delay: calc(var(--i) * 70ms + 150ms); }
+.node .tile { display: block; width: var(--w); height: var(--h); transition: transform .25s ease; }
+.node img { display: block; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 .5cqw .9cqw rgba(10, 30, 26, .38)); transition: filter .25s ease; }
+.node.ring-inner img { filter: drop-shadow(0 0 .25cqw rgba(255, 255, 255, .5)) drop-shadow(0 .5cqw .9cqw rgba(0, 0, 0, .45)); }
+.node.fade-b img { -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
+.node:hover .tile, .node:focus-visible .tile { transform: translateY(-.6cqw) scale(1.1); }
+.node:focus-visible { outline: none; }
+.node:focus-visible .cap, .node:hover .cap { background: rgba(14, 26, 23, .92); box-shadow: 0 0 0 .3cqw var(--g); }
+.node .cap {
   position: absolute; white-space: nowrap; text-align: center; color: #fff; z-index: 2;
-  font: 600 clamp(9px, 2cqw, 12.5px)/1.2 var(--head); padding: .38em .8em; border-radius: .95em;
-  background: rgba(26, 40, 36, .74); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  font: 600 clamp(9px, 2cqw, 12.5px)/1.2 var(--head); padding: .38em .8em .38em 1.45em; border-radius: .95em;
+  background: rgba(26, 40, 36, .76); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); transition: background .2s ease, box-shadow .2s ease;
 }
-.side-b figcaption { top: calc(100% + .7cqw); left: 50%; transform: translateX(-50%); }
-.side-t figcaption { bottom: calc(100% + .7cqw); left: 50%; transform: translateX(-50%); }
-.side-r figcaption { left: calc(100% + .9cqw); top: 50%; transform: translateY(-50%); }
-.side-l figcaption { right: calc(100% + .9cqw); top: 50%; transform: translateY(-50%); }
-.wheel-legend { display: none; list-style: none; margin: 1.2rem 0 0; padding: 0; flex-wrap: wrap; gap: .4rem .5rem; justify-content: center; }
-.wheel-legend li { font: 600 .78rem/1 var(--head); padding: .4em .8em; border-radius: 99px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); }
-.wheel-legend li::before { content: ""; display: inline-block; width: .55em; height: .55em; border-radius: 50%; margin-right: .5em; background: #87a896; }
-.wheel-legend li.ring-inner::before { background: #3c4b43; }
-@container (max-width: 440px) { .node figcaption { display: none; } .wheel-legend { display: flex; } }
+.node .cap::before { content: ""; position: absolute; left: .6em; top: 50%; width: .55em; height: .55em; margin-top: -.275em; border-radius: 50%; background: var(--g); box-shadow: 0 0 0 .12em rgba(255, 255, 255, .7); }
+.side-b .cap { top: calc(100% + .5cqw); left: 50%; transform: translateX(-50%); }
+.side-t .cap { bottom: calc(100% + .5cqw); left: 50%; transform: translateX(-50%); }
+.side-r .cap { left: calc(100% + .9cqw); top: 50%; transform: translateY(-50%); }
+.side-l .cap { right: calc(100% + .9cqw); top: 50%; transform: translateY(-50%); }
+.wheel-groups, .wheel-legend { list-style: none; margin: 1.2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .5rem; justify-content: center; }
+.wheel-legend { display: none; margin-top: .6rem; }
+.wheel-groups li, .wheel-legend li { font: 600 .8rem/1 var(--head); border-radius: 99px; background: var(--surface); border: 1px solid var(--line); }
+.wheel-groups a, .wheel-legend a { display: block; padding: .5em .9em; color: var(--ink); text-decoration: none; }
+.wheel-groups a::before, .wheel-legend a::before { content: ""; display: inline-block; width: .6em; height: .6em; border-radius: 50%; margin-right: .55em; background: var(--g); }
+.wheel-groups a:hover, .wheel-legend a:hover { color: var(--brand-text); }
+@container (max-width: 440px) { .node .cap { display: none; } .wheel-legend { display: flex; } }
 @keyframes node-pop { from { opacity: 0; transform: translate(-50%, -50%) scale(.82); } }
-@media (prefers-reduced-motion: reduce) { .node { animation: none; } .node .tile { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .node { animation: none; } .node .tile, .node img { transition: none; } }
 
 /* ---------- illustration animée (page X-Ray Wave Imaging) ---------- */
 .wave-figure { margin: 0 0 2rem; padding: 1.1rem 1.2rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }

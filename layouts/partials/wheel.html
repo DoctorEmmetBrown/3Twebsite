@@ -1,20 +1,26 @@
-{{- /* Roue de l'équipe (accueil) : données dans data/wheel.yaml, images dans static/img/wheel/ */ -}}
+{{- /* Roue de l'équipe (accueil) : données dans data/wheel.yaml, images dans static/img/wheel/.
+       Chaque image renvoie vers la page de son groupe de recherche (champ "group"). */ -}}
 {{- $d := site.Data.wheel -}}
+{{- $groups := (site.GetPage "/research").Pages.ByWeight -}}
 <div class="wheel-wrap">
-  <div class="wheel" role="group" aria-label="The team's research wheel: three aims at the centre, imaging techniques in the inner ring, applications in the outer ring.">
+  <div class="wheel" role="group" aria-label="The team's research wheel: three aims at the centre, imaging techniques in the inner ring, applications in the outer ring. Each picture links to the research group concerned.">
     <div class="wheel-core"><ul>{{ range $d.center }}<li>{{ . }}</li>{{ end }}</ul></div>
     {{ range $i, $n := $d.nodes -}}
     {{- $r := cond (eq $n.ring "inner") 26.3 42 -}}
     {{- $a := mul $n.angle (div math.Pi 180) -}}
     {{- $x := add 50 (mul $r (math.Sin $a)) -}}
     {{- $y := sub 50 (mul $r (math.Cos $a)) -}}
-    <figure class="node ring-{{ $n.ring }} side-{{ $n.side }}" style="left:{{ printf "%.2f" $x }}%;top:{{ printf "%.2f" $y }}%;--w:{{ $n.w }}cqw;--h:{{ $n.h }}cqw;--i:{{ $i }}">
+    {{- $page := "" -}}{{- range $groups }}{{ if eq .Params.group $n.group }}{{ $page = . }}{{ end }}{{ end -}}
+    <a class="node ring-{{ $n.ring }} side-{{ $n.side }} g-{{ $n.group }}{{ with $n.fade }} fade-{{ . }}{{ end }}" href="{{ with $page }}{{ .RelPermalink }}{{ end }}" aria-label="{{ replace $n.label "|" " " }}, see the group {{ with $page }}{{ .Title }}{{ end }}" style="left:{{ printf "%.2f" $x }}%;top:{{ printf "%.2f" $y }}%;--w:{{ $n.w }}cqw;--h:{{ $n.h }}cqw;--i:{{ $i }}">
       <span class="tile"><img src="{{ printf "img/wheel/%s.png" $n.id | relURL }}" alt="" width="{{ mul $n.w 10 }}" height="{{ mul $n.h 10 }}" loading="lazy" decoding="async"></span>
-      <figcaption>{{ replace ($n.label | htmlEscape) "|" "<br>" | safeHTML }}</figcaption>
-    </figure>
+      <span class="cap">{{ replace ($n.label | htmlEscape) "|" "<br>" | safeHTML }}</span>
+    </a>
     {{ end }}
   </div>
+  <ul class="wheel-groups" aria-label="Research groups">
+    {{ range $groups }}<li class="g-{{ .Params.group }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+  </ul>
   <ul class="wheel-legend" aria-label="Techniques and applications">
-    {{ range $d.nodes }}<li class="ring-{{ .ring }}">{{ replace .label "|" " " }}</li>{{ end }}
+    {{ range $d.nodes }}{{ $n := . }}{{ range $groups }}{{ if eq .Params.group $n.group }}<li class="g-{{ $n.group }}"><a href="{{ .RelPermalink }}">{{ replace $n.label "|" " " }}</a></li>{{ end }}{{ end }}{{ end }}
   </ul>
 </div>
