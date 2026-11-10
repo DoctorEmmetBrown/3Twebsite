@@ -176,6 +176,15 @@
   web:
   linkedin:
 
+- name: Vicente Estopier Castillo
+  role: PhD student
+  group: xwi
+  kind: junior
+  photo: Vicente-Estopier.jpg
+  web:
+  linkedin:
+
+
 # --- Image-guided Surgery and Neutron Capture Therapy ---
 - name: Christol Fabre
   role: Hospital-University Practitioner (PHU), UGA
