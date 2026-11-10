@@ -4,3 +4,4 @@ resources/
 .DS_Store
 scripts/.cache/
 scripts/__pycache__/
+old/

@@ -111,7 +111,7 @@
   group: xwi
   kind: staff
   orcid: 0009-0003-1041-4231
-  photo: cecile-olivier.jpg
+  photo: olivier-cecile.jpg
   web:
   linkedin:
 - name: Pierre-Yves Rabattu
@@ -143,6 +143,15 @@
   photo: kim-bazot.jpg
   web:
   linkedin:
+
+- name: Rémi Dupraz
+  role: PhD student
+  group: xwi
+  kind: junior
+  photo: dupraz-roget-remi.jpg
+  web:
+  linkedin: https://www.linkedin.com/in/rémi-dupraz-423875419/
+
 
 - name: Sofia Manzueta
   role: PhD student
