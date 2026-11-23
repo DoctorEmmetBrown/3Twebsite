@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-16",
- "count": 307,
+ "generated": "2026-11-23",
+ "count": 337,
  "orcids": [
   "0000-0001-5269-1403",
   "0000-0001-6355-7592",
@@ -17,6 +17,28 @@
   "0009-0003-1041-4231"
  ],
  "years": [
+  {
+   "year": 2028,
+   "items": [
+    {
+     "title": "Phase Contrast computed tomography to characterize rat brain tumors after ultrasound-enhanced chemo-radiotherapy",
+     "authors": "Adam, Jean François, Bongard, Théo, Bulin, Anne-Laure, Elleaume, Hélène, Keshmiri, Sarvenaz, Olivier, Cécile, Ravanat, Jean Luc, Rigollet, Sébastien",
+     "authors_short": "Adam, Jean François, Bongard, Théo, Bulin, Anne-Laure, Elleaume, Hélène, Keshmiri, Sarvenaz, Olivier, Cécile, Ravanat, Jean Luc, Rigollet, Sébastien",
+     "journal": "European Synchrotron Radiation Facility",
+     "year": 2028,
+     "type": "other",
+     "doi": "10.15151/esrf-es-2032075215",
+     "url": "https://doi.org/10.15151/esrf-es-2032075215",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    }
+   ]
+  },
   {
    "year": 2026,
    "items": [
@@ -35,6 +57,23 @@
      ],
      "members": [
       "Emmanuel Brun"
+     ]
+    },
+    {
+     "title": "Effect of glucagon-like peptide-1 receptor agonists on respiratory drive in patients with obesity and type 2 diabetes: a retrospective case-control study of the SOON cohort",
+     "authors": "Mathilde Quema, Sam Bayat, Matthieu Roustit, Jean-Christian Borel, Anne-Laure Borel",
+     "authors_short": "Mathilde Quema, Sam Bayat, Matthieu Roustit, Jean-Christian Borel, Anne-Laure Borel",
+     "journal": "ERJ Open Research",
+     "year": 2026,
+     "type": "journal-article",
+     "doi": "10.1183/23120541.01236-2026",
+     "url": "https://doi.org/10.1183/23120541.01236-2026",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Sam Bayat"
      ]
     },
     {
@@ -440,6 +479,23 @@
      ]
     },
     {
+     "title": "Imaging biomarkers of post-COVID dyspnea: insights from machine learning CT patterns and parametric response mapping",
+     "authors": "Julien G. Cohen, Vicente Estopier-Castillo, Cécile Olivier, Marie Destors, Gilbert R. Ferretti, Jean-Louis Pépin, Renaud Tamisier, Sam Bayat",
+     "authors_short": "Julien G. Cohen, Vicente Estopier-Castillo, Cécile Olivier, Marie Destors, Gilbert R. Ferretti, Jean-Louis Pépin, Renaud Tamisier, Sam Bayat",
+     "journal": "Respiratory Research",
+     "year": 2026,
+     "type": "journal-article",
+     "doi": "10.1186/s12931-026-03614-5",
+     "url": "https://doi.org/10.1186/s12931-026-03614-5",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Highly efficient long-range conduction through a biosynthetic nickel-organic framework",
      "authors": "F. J. R. Meysman, B. Smets, S. Hidalgo-Martinez, N. Claes, B. C. Schroeder, J. S. Geelhoed, Y. Liu, J. Alingapoyil Choyikutty, T. Chennit, T. Bodson, A. Collauto, M. M. Roessler, D. Karpov, S. Bohic, M. Aramini, S. Hayama, M. Wetherington, M. A. Zwijnenburg, G. Pankratova, I. Pintelon, J.-P. Timmermans, G. Nuyts, K. De Wael, S. Bals, J. Verbeeck, H. Remaut, H. T. S. Boschker",
      "authors_short": "F. J. R. Meysman, B. Smets, S. Hidalgo-Martinez, … H. Remaut, H. T. S. Boschker",
@@ -476,6 +532,23 @@
      ]
     },
     {
+     "title": "Analysis of heart morphology in zebrafish mutants with targeted inactivation of the dio2 gene",
+     "authors": "Olivier, Cécile, Brun, Emmanuel, Coen, Laurent, Sowinski, Morgane, Boistel, Renaud",
+     "authors_short": "Olivier, Cécile, Brun, Emmanuel, Coen, Laurent, Sowinski, Morgane, Boistel, Renaud",
+     "journal": "European Synchrotron Radiation Facility",
+     "year": 2026,
+     "type": "other",
+     "doi": "10.15151/esrf-es-1026152185",
+     "url": "https://doi.org/10.15151/esrf-es-1026152185",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Accumulation, metabolic effects, and mechanisms of toxicity of nickel in the microalga <i>Chlorella sorokiniana</i>",
      "authors": "M. Dimitrijević, J. D. Luković, T. Dučić, G. Aquilanti, M. Salomé, M. Stanić, S. Bohic, M. Jevtović, S. Kovačević, M. Opačić, B. Zechmann, J. K. Pittman, I. Spasojević, M. Žižić",
      "authors_short": "M. Dimitrijević, J. D. Luković, T. Dučić, … I. Spasojević, M. Žižić",
@@ -507,6 +580,23 @@
      ],
      "members": [
       "Sam Bayat"
+     ]
+    },
+    {
+     "title": "3D Multi-Scale Phase Contrast Imaging of CoViD-19 Human Skin Biopsies",
+     "authors": "Olivier, Cécile, Brun, Emmanuel, Gil, Hugo, Adam, Jean François, Lopez, Lino, Fardin, Luca, Bayat, Sam, Mouret, Stéphane",
+     "authors_short": "Olivier, Cécile, Brun, Emmanuel, Gil, Hugo, Adam, Jean François, Lopez, Lino, Fardin, Luca, Bayat, Sam, Mouret, Stéphane",
+     "journal": "European Synchrotron Radiation Facility",
+     "year": 2026,
+     "type": "other",
+     "doi": "10.15151/esrf-es-1021691971",
+     "url": "https://doi.org/10.15151/esrf-es-1021691971",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
      ]
     }
    ]
@@ -843,23 +933,6 @@
      ]
     },
     {
-     "title": "A self-healing radiopaque hyaluronic acid hydrogel as a new injectable biomaterial for precision medicine in osteoarthritis.",
-     "authors": "Said M, Tavakoli C, Dumot C, Toupet K, Olivier C, Gilles A, Maumus M, Dong YC, Collomb N, Auxenfans C, Moisan A, Favier B, Chovelon B, Barbier EL, Auzély-Velty R",
-     "authors_short": "Said M, Tavakoli C, Dumot C, … Barbier EL, Auzély-Velty R",
-     "journal": "Theranostics",
-     "year": 2025,
-     "type": "journal-article",
-     "doi": "10.7150/thno.104551",
-     "url": "https://doi.org/10.7150/thno.104551",
-     "also": [],
-     "groups": [
-      "xwi"
-     ],
-     "members": [
-      "Emmanuel Brun"
-     ]
-    },
-    {
      "title": "Twelve Years of LabEx PRIMES (2012-2024)",
      "authors": "Francoise Peyrin, Denis Dauvergne, Olivier Beuf, Jean-François Adam, Olivier Bernard, Michael Beuve, Emmanuel Brun, Sorina Camarasu-Pop, Serge Candéias, Patrick Clarysse, Rachel Delorme, Loic Denis, Nicolas Duchateau, Nicolas Ducros, Elise Dumont, Hélène Elleaume, Denis Friboulet, Carole Frindel, Marie-Laure Gallin-Martel, Thomas Grenier, Hamid Ladjal, Carole Lartizien, Jean Michel Létang, Benjamin Leporq, Hervé Liebgott, David Loffreda, Lydia Maigne, Voichita Maxim, Odyssée Merveille, Fabien Millioz, David Mitton, Fabien Yannick Momey-Casella, Bruno Montcel, Pauline Muleki-Seya, Maciej Orkisz, Frank Pilleul, Patrick Pittet, Hélène Ratiney, Jean-Luc Ravanat, Cedric Ray, Béatrice Rayet, Simon Rit, Claire Rodriguez-Lafrasse, Pilar Sango-Solanas, David Sarrut, Salim Si-Mohamed, Michaël Sdika, Raphael Serduc, Behzad Shariat, Étienne Testa, Patrick Vernet, Antoine Vacavant, François Varray, Magalie Viallon, Gaël Vila",
      "authors_short": "Francoise Peyrin, Denis Dauvergne, Olivier Beuf, … Magalie Viallon, Gaël Vila",
@@ -945,6 +1018,23 @@
      ]
     },
     {
+     "title": "Tracking therapeutic cells and their embedding scaffold using k-edge imaging in rodent models of chronic diseases: Part 2",
+     "authors": "Olivier, Cécile, Tavakoli, Clément Kyanosh, Brun, Emmanuel, Elleaume, Hélène, Toupet, Karine, Wiart, Marlène",
+     "authors_short": "Olivier, Cécile, Tavakoli, Clément Kyanosh, Brun, Emmanuel, Elleaume, Hélène, Toupet, Karine, Wiart, Marlène",
+     "journal": "European Synchrotron Radiation Facility",
+     "year": 2025,
+     "type": "other",
+     "doi": "10.15151/esrf-es-799086914",
+     "url": "https://doi.org/10.15151/esrf-es-799086914",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Stability and Mitochondrial Localization of a Highly Cytotoxic Organogold(III) Complex with Diphosphine Ancillary Ligand in Lung Cancer Cells",
      "authors": "H. Blommaert, C. Soep, E. Remadna, H. Dossmann, M. Salomé, O. Proux, I. Kieffer, J. Hazemann, S. Bohic, M. Salmain, B. Bertrand",
      "authors_short": "H. Blommaert, C. Soep, E. Remadna, … M. Salmain, B. Bertrand",
@@ -1014,9 +1104,9 @@
     },
     {
      "title": "Longitudinal imaging with multicolour CT provides a surrogate marker of response to treatment with a novel iodine-labelled hydrogel in a murine model of osteoarthritis",
-     "authors": "Clément Tavakoli, Moustoifa Said, Alexia Gilles, Cecile Olivier, Yuxi Clara Dong, Nora Collomb, Anaïck Moisan, Bertrand Favier, Emmanuel L Barbier, David Cormode, Emmanuel Brun, Hélène Elleaume, Olivier Detante, Claire Rome, Danièle Noël, Rachel Auzély-Velty, Marlène Wiart",
-     "authors_short": "Clément Tavakoli, Moustoifa Said, Alexia Gilles, … Rachel Auzély-Velty, Marlène Wiart",
-     "journal": "",
+     "authors": "Tavakoli, Clément, Said, Moustoifa, Gilles, Alexia, Olivier, Cécile, Dong, Yuxi Clara, Collomb, Nora, Moisan, Anaïck, Favier, Bertrand, Barbier, Emmanuel L., Cormode, David, Brun, Emmanuel, Elleaume, Hélène, Detante, Olivier, Rome, Claire, Noël, Danièle, Auzély-Velty, Rachel, Wiart, Marlène",
+     "authors_short": "Tavakoli, Clément, Said, Moustoifa, Gilles, Alexia, … Auzély-Velty, Rachel, Wiart, Marlène",
+     "journal": "20th annual European Molecular Imaging Meeting (EMIM)",
      "year": 2025,
      "type": "conference-paper",
      "doi": "",
@@ -1026,7 +1116,25 @@
       "xwi"
      ],
      "members": [
+      "Cécile Olivier",
       "Emmanuel Brun"
+     ]
+    },
+    {
+     "title": "Investigating the Remarkable Deformability of Intermuscular Bones in Teleost Fish: Insights from Porous Networks and Mineralization Patterns",
+     "authors": "Imke A. K. Fiedler, Eric Schaible, Boliang Yu, Murielle Salome, Max Langer, Svetlana Zeveleva, James Rosenberg, Cécile Olivier, Robert O. Ritchie, Tamara Alliston, Francoise Peyrin, Claire Acevedo, Jean-Philippe Berteau",
+     "authors_short": "Imke A. K. Fiedler, Eric Schaible, Boliang Yu, … Claire Acevedo, Jean-Philippe Berteau",
+     "journal": "Advanced Functional Materials",
+     "year": 2025,
+     "type": "journal-article",
+     "doi": "10.1002/adfm.202512383",
+     "url": "https://doi.org/10.1002/adfm.202512383",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
      ]
     },
     {
@@ -1067,6 +1175,57 @@
      ]
     },
     {
+     "title": "Human cortical bone intrinsic permeability distribution based on 3D canalicular morphology",
+     "authors": "Remy Gauthier, Hélène Follet, Cécile Olivier, Thibault Lemaire, David Mitton, Francoise Peyrin",
+     "authors_short": "Remy Gauthier, Hélène Follet, Cécile Olivier, Thibault Lemaire, David Mitton, Francoise Peyrin",
+     "journal": "Bone",
+     "year": 2025,
+     "type": "journal-article",
+     "doi": "10.1016/j.bone.2025.117441",
+     "url": "https://doi.org/10.1016/j.bone.2025.117441",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "Formation osseuse intervertébrale précoce dans un modèle pré-clinique de spondyloarthrite récente révélée par l'imagerie par contraste de phase aux rayons X : repenser la maladie axiale",
+     "authors": "F. Verhoeven, C. Olivier, S. Aubry, S. Hecquet, C. Viennet, P. Totoson, X. Romand, A. Baillet, L. Broche, D. Wendling, C. Demougeot, C. Prati, E. Brun",
+     "authors_short": "F. Verhoeven, C. Olivier, S. Aubry, … C. Prati, E. Brun",
+     "journal": "Revue du Rhumatisme",
+     "year": 2025,
+     "type": "journal-article",
+     "doi": "10.1016/j.rhum.2025.10.338",
+     "url": "https://doi.org/10.1016/j.rhum.2025.10.338",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "Correlation between machine learning based chest CT quantification and persistent symptoms in post-Covid-19 patients",
+     "authors": "Julien Cohen, Vicente Estopier-Castillo, Cécile Olivier, Marie Destors, Gilbert Ferretti, Jean-Louis Pépin, Renaud Tamisier, Sam Bayat",
+     "authors_short": "Julien Cohen, Vicente Estopier-Castillo, Cécile Olivier, Marie Destors, Gilbert Ferretti, Jean-Louis Pépin, Renaud Tamisier, Sam Bayat",
+     "journal": "European Respiratory Journal (ERS Congress 2025)",
+     "year": 2025,
+     "type": "conference-paper",
+     "doi": "10.1183/13993003.congress-2025.pa4127",
+     "url": "https://doi.org/10.1183/13993003.congress-2025.pa4127",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Click-ready iridium(iii) complexes as versatile bioimaging probes for bioorthogonal metabolic labeling",
      "authors": "Vincent Rigolot, Clémence Simon, Aude Bouchet, Lucas Lancel, Veronica Di Battista, Dmitry Karpov, Boris Vauzeilles, Corentin Spriet, Michel Sliwa, Sylvain Bohic, Christophe Biot, Cédric Lion",
      "authors_short": "Vincent Rigolot, Clémence Simon, Aude Bouchet, … Christophe Biot, Cédric Lion",
@@ -1083,6 +1242,58 @@
      ],
      "members": [
       "Sylvain Bohic"
+     ]
+    },
+    {
+     "title": "Canalicular Intrinsic Permeability in Human Femoral Cortical Bone assessed by 3D Synchrotron Nano-CT",
+     "authors": "Rémy Gauthier, Hélène Follet, Cécile Olivier, Thibault Lemaire, David Mitton, Françoise Peyrin",
+     "authors_short": "Rémy Gauthier, Hélène Follet, Cécile Olivier, Thibault Lemaire, David Mitton, Françoise Peyrin",
+     "journal": "Multidisciplinary Biomechanics Journal",
+     "year": 2025,
+     "type": "journal-article",
+     "doi": "10.46298/mbj.14493",
+     "url": "https://doi.org/10.46298/mbj.14493",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "Bone behavior around a self-tapping dental implant during its insertion",
+     "authors": "Olivier, Cécile, Maire, Eric, Richard, Hervé, Adrien, Jérôme, Preiss, Laura, Courtois, Loïc, Gauthier, Rémy",
+     "authors_short": "Olivier, Cécile, Maire, Eric, Richard, Hervé, Adrien, Jérôme, Preiss, Laura, Courtois, Loïc, Gauthier, Rémy",
+     "journal": "European Synchrotron Radiation Facility",
+     "year": 2025,
+     "type": "other",
+     "doi": "10.15151/esrf-es-953232152",
+     "url": "https://doi.org/10.15151/esrf-es-953232152",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "A self-healing radiopaque hyaluronic acid hydrogel as a new injectable biomaterial for precision medicine in osteoarthritis",
+     "authors": "Moustoifa Said, Clément Tavakoli, Chloé Dumot, Karine Toupet, Cécile Olivier, Alexia Gilles, Marie Maumus, Yuxi Clara Dong, Nora Collomb, Céline Auxenfans, Anaïck Moisan, Bertrand Favier, Benoit Chovelon, Emmanuel Luc Barbier, David Peter Cormode, Emmanuel Brun, Hélène Elleaume, Marlène Wiart, Olivier Detante, Claire Rome, Danièle Noël, Rachel Auzély-Velty",
+     "authors_short": "Moustoifa Said, Clément Tavakoli, Chloé Dumot, … Danièle Noël, Rachel Auzély-Velty",
+     "journal": "Theranostics",
+     "year": 2025,
+     "type": "journal-article",
+     "doi": "10.7150/thno.104551",
+     "url": "https://doi.org/10.7150/thno.104551",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier",
+      "Emmanuel Brun"
      ]
     }
    ]
@@ -1531,9 +1742,9 @@
     },
     {
      "title": "In vivo monitoring of stem cells and their encapsulating scaffold using dual-contrast agent labelling and multicolour CT: application in a murine model of osteoarthritis",
-     "authors": "Clément Tavakoli, Moustoifa Said, Cécile Olivier, Alexia Gilles, Yuxi Clara Dong, Nora Collomb, Anaïck Moisan, Bertrand Favier, Emmanuel L Barbier, David Peter Cormode, Emmanuel Brun, Hélène Elleaume, Olivier Detante, Claire Rome, Danièle Noël, Rachel Auzély-Velty, Marlène Wiart",
-     "authors_short": "Clément Tavakoli, Moustoifa Said, Cécile Olivier, … Rachel Auzély-Velty, Marlène Wiart",
-     "journal": "",
+     "authors": "Tavakoli, Clément, Said, Moustoifa, Olivier, Cécile, Gilles, Alexia, Dong, Yuxi Clara, Collomb, Nora, Moisan, Anaïck, Favier, Bertrand, Barbier, Emmanuel L., Cormode, David Peter, Brun, Emmanuel, Elleaume, Hélène, Detante, Olivier, Rome, Claire, Noël, Danièle, Auzély-Velty, Rachel, Wiart, Marlène",
+     "authors_short": "Tavakoli, Clément, Said, Moustoifa, Olivier, Cécile, … Auzély-Velty, Rachel, Wiart, Marlène",
+     "journal": "Contrast Media Research Symposium",
      "year": 2024,
      "type": "conference-paper",
      "doi": "",
@@ -1543,7 +1754,42 @@
       "xwi"
      ],
      "members": [
+      "Cécile Olivier",
       "Emmanuel Brun"
+     ]
+    },
+    {
+     "title": "Human Femoral Canalicular Network Hydraulic Conductivity",
+     "authors": "Gauthier, Rémy, Follet, Hélène, Olivier, Cecile, Lemaire, T., Mitton, David, Peyrin, Françoise",
+     "authors_short": "Gauthier, Rémy, Follet, Hélène, Olivier, Cecile, Lemaire, T., Mitton, David, Peyrin, Françoise",
+     "journal": "29th Congress of the European Society of Biomechanics",
+     "year": 2024,
+     "type": "conference-paper",
+     "doi": "",
+     "url": "https://hal.science/hal-04882828",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "Cell quantification at the osteochondral interface from synchrotron radiation phase contrast micro-computed tomography images using a deep learning approach",
+     "authors": "Hao Xu, Cecile Olivier, Hajar Sajidy, Stéphane Pallu, Hugues Portier, Francoise Peyrin, Christine Chappard",
+     "authors_short": "Hao Xu, Cecile Olivier, Hajar Sajidy, Stéphane Pallu, Hugues Portier, Francoise Peyrin, Christine Chappard",
+     "journal": "Scientific Reports",
+     "year": 2024,
+     "type": "journal-article",
+     "doi": "10.1038/s41598-024-81333-x",
+     "url": "https://doi.org/10.1038/s41598-024-81333-x",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
      ]
     }
    ]
@@ -1584,23 +1830,6 @@
      ],
      "members": [
       "Matthieu Olivetto"
-     ]
-    },
-    {
-     "title": "Imagerie cutanée par rayonnement synchrotron : application aux pseudo-engelures COVID-19",
-     "authors": "S. Mouret, E. Brun, H. Gil, J.F. Adam, J. Villanova, M. Dubus, C. Olivier, M. Tardieu, I. Templier, T. Hubiche, N. Cardot-Leccia, K. Bazot, S. Singh, J. Charles, S. Bayat, O. Chosidow, M.T. Leccia",
-     "authors_short": "S. Mouret, E. Brun, H. Gil, … O. Chosidow, M.T. Leccia",
-     "journal": "Annales de Dermatologie et de Vénéréologie - FMC",
-     "year": 2023,
-     "type": "conference-paper",
-     "doi": "10.1016/j.fander.2023.09.220",
-     "url": "https://doi.org/10.1016/j.fander.2023.09.220",
-     "also": [],
-     "groups": [
-      "xwi"
-     ],
-     "members": [
-      "Emmanuel Brun"
      ]
     },
     {
@@ -2010,6 +2239,23 @@
      ]
     },
     {
+     "title": "Scanner couleur : intérêt dans l'arthrose",
+     "authors": "J. Abascal, C. Olivier, S. Bussod, F. Peyrin, C. Chappard",
+     "authors_short": "J. Abascal, C. Olivier, S. Bussod, F. Peyrin, C. Chappard",
+     "journal": "Revue du Rhumatisme",
+     "year": 2023,
+     "type": "journal-article",
+     "doi": "10.1016/j.rhum.2023.10.050",
+     "url": "https://doi.org/10.1016/j.rhum.2023.10.050",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Quantification of cartilage and subchondral bone cysts on knee specimens based on a spectral photon-counting computed tomography",
      "authors": "Célestin Garcelon, Juan Abascal, Cecile Olivier, Stéphanie Uk, Salim Si-Mohamed, Hang-Korng Ea, Philippe Douek, Françoise Peyrin, Christine Chappard",
      "authors_short": "Célestin Garcelon, Juan Abascal, Cecile Olivier, … Françoise Peyrin, Christine Chappard",
@@ -2018,7 +2264,9 @@
      "type": "journal-article",
      "doi": "10.1038/s41598-023-38238-y",
      "url": "https://doi.org/10.1038/s41598-023-38238-y",
-     "also": [],
+     "also": [
+      "10.1016/j.joca.2024.02.498"
+     ],
      "groups": [
       "xwi"
      ],
@@ -2040,6 +2288,24 @@
       "xwi"
      ],
      "members": [
+      "Emmanuel Brun"
+     ]
+    },
+    {
+     "title": "Imagerie cutanée par rayonnement synchrotron : application aux pseudo-engelures COVID-19",
+     "authors": "S. Mouret, E. Brun, H. Gil, J.F. Adam, J. Villanova, M. Dubus, C. Olivier, M. Tardieu, I. Templier, T. Hubiche, N. Cardot-Leccia, K. Bazot, S. Singh, J. Charles, S. Bayat, O. Chosidow, M.T. Leccia",
+     "authors_short": "S. Mouret, E. Brun, H. Gil, … O. Chosidow, M.T. Leccia",
+     "journal": "Annales de Dermatologie et de Vénéréologie - FMC",
+     "year": 2023,
+     "type": "journal-article",
+     "doi": "10.1016/j.fander.2023.09.220",
+     "url": "https://doi.org/10.1016/j.fander.2023.09.220",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier",
       "Emmanuel Brun"
      ]
     }
@@ -2434,44 +2700,6 @@
      ]
     },
     {
-     "title": "Brain virtual histology with X-ray phase-contrast tomography Part II: 3D morphologies of amyloid-β plaques in Alzheimer’s disease models",
-     "authors": "Matthieu Chourrout, Margaux Roux, Carlie Boisvert, Coralie Gislard, David Legland, Ignacio Arganda-Carreras, Cécile Olivier, Françoise Peyrin, Hervé Boutin, Nicolas Rama, Thierry Baron, David Meyronet, Emmanuel Brun, Hugo Rositi, Marlène Wiart, Fabien Chauveau",
-     "authors_short": "Matthieu Chourrout, Margaux Roux, Carlie Boisvert, … Marlène Wiart, Fabien Chauveau",
-     "journal": "Biomedical Optics Express",
-     "year": 2022,
-     "type": "preprint",
-     "doi": "10.1101/2021.03.25.436908",
-     "url": "https://doi.org/10.1101/2021.03.25.436908",
-     "also": [
-      "10.1364/boe.438890"
-     ],
-     "groups": [
-      "xwi"
-     ],
-     "members": [
-      "Emmanuel Brun"
-     ]
-    },
-    {
-     "title": "Brain virtual histology with X-ray phase-contrast tomography Part I: whole-brain myelin mapping in white-matter injury models",
-     "authors": "Matthieu Chourrout, Hugo Rositi, Elodie Ong, Violaine Hubert, Alexandre Paccalet, Louis Foucault, Awen Autret, Barbara Fayard, Cécile Olivier, Radu Bolbos, Françoise Peyrin, Claire Crola-da-Silva, David Meyronet, Olivier Raineteau, Héléne Elleaume, Emmanuel Brun, Fabien Chauveau, Marlene Wiart",
-     "authors_short": "Matthieu Chourrout, Hugo Rositi, Elodie Ong, … Fabien Chauveau, Marlene Wiart",
-     "journal": "Biomedical Optics Express",
-     "year": 2022,
-     "type": "newspaper-article",
-     "doi": "10.1364/boe.438832",
-     "url": "https://doi.org/10.1364/boe.438832",
-     "also": [
-      "10.1101/2021.03.24.436852"
-     ],
-     "groups": [
-      "xwi"
-     ],
-     "members": [
-      "Emmanuel Brun"
-     ]
-    },
-    {
      "title": "Suzanne Noël et les Gueules Cassées de la guerre 1914–1918 : une légende ?",
      "authors": "M. Olivetto, B. Devauchelle",
      "authors_short": "M. Olivetto, B. Devauchelle",
@@ -2594,8 +2822,8 @@
     },
     {
      "title": "Virtual histology of Alzheimer's Disease: why are amyloid-&beta; plaques visible with X-ray phase-contrast imaging?",
-     "authors": "M. Chourrout, C. Sandt, T. Weitkamp, T. Dučić, D. Meyronet, T. Baron, J. Klohs, N. Rama, H. Boutin, S. Singh, C. Olivier, M. Wiart, E. Brun, S. Bohic, F. Chauveau",
-     "authors_short": "M. Chourrout, C. Sandt, T. Weitkamp, … S. Bohic, F. Chauveau",
+     "authors": "Chourrout M, Sandt C, Weitkamp T, Dučić T, Meyronet D, Baron T, Klohs J, Rama N, Boutin H, Singh S, Olivier C, Wiart M, Brun E, Bohic S, Chauveau F",
+     "authors_short": "Chourrout M, Sandt C, Weitkamp T, … Bohic S, Chauveau F",
      "journal": "bioRxiv",
      "year": 2022,
      "type": "preprint",
@@ -2603,9 +2831,11 @@
      "url": "https://doi.org/10.1101/2022.09.27.509706",
      "also": [],
      "groups": [
-      "metals"
+      "metals",
+      "xwi"
      ],
      "members": [
+      "Cécile Olivier",
       "Sylvain Bohic"
      ]
     },
@@ -2626,6 +2856,23 @@
      ],
      "members": [
       "Sylvain Bohic"
+     ]
+    },
+    {
+     "title": "Quantification de l'épaisseur du cartilage sur des images de scanner spectral à comptage de photons",
+     "authors": "C. Garcelon, J. Abascal, C. Olivier, S. Si-Mohamed, P. Douek, F. Peyrin, C. Chappard",
+     "authors_short": "C. Garcelon, J. Abascal, C. Olivier, S. Si-Mohamed, P. Douek, F. Peyrin, C. Chappard",
+     "journal": "Revue du Rhumatisme",
+     "year": 2022,
+     "type": "journal-article",
+     "doi": "10.1016/j.rhum.2022.10.300",
+     "url": "https://doi.org/10.1016/j.rhum.2022.10.300",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
      ]
     },
     {
@@ -3402,6 +3649,23 @@
      ]
     },
     {
+     "title": "Investigation of Mineral-Collagen Interface in Intra-Muscular Bones of the Atlantic Herring",
+     "authors": "Berteau-Nanot, Jean-Philippe, Olivier, Cécile, Peyrin, Françoise, Bussod, Suzanne, Yu, Boliang, Fiedler, Imke",
+     "authors_short": "Berteau-Nanot, Jean-Philippe, Olivier, Cécile, Peyrin, Françoise, Bussod, Suzanne, Yu, Boliang, Fiedler, Imke",
+     "journal": "European Synchrotron Radiation Facility",
+     "year": 2021,
+     "type": "other",
+     "doi": "10.15151/esrf-es-120126396",
+     "url": "https://doi.org/10.15151/esrf-es-120126396",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Imaging atelectrauma in Ventilator-Induced Lung Injury using 4D X-ray microscopy",
      "authors": "Fardin, Luca, Broche, Ludovic, Lovric, Goran, Mittone, Alberto, Stephanov, Olivier, Larsson, Anders, Bravin, Alberto, Bayat, Sam",
      "authors_short": "Fardin, Luca, Broche, Ludovic, Lovric, Goran, Mittone, Alberto, Stephanov, Olivier, Larsson, Anders, Bravin, Alberto, Bayat, Sam",
@@ -3432,6 +3696,46 @@
       "xwi"
      ],
      "members": [
+      "Emmanuel Brun"
+     ]
+    },
+    {
+     "title": "Brain virtual histology with X-ray phase-contrast tomography Part II: 3D morphologies of amyloid-β plaques in Alzheimer's disease models",
+     "authors": "Matthieu Chourrout, Margaux Roux, Carlie Boisvert, Coralie Gislard, David Legland, Ignacio Arganda-Carreras, Cécile Olivier, Françoise Peyrin, Hervé Boutin, Nicolas Rama, Thierry Baron, David Meyronet, Emmanuel Brun, Hugo Rositi, Marlène Wiart, Fabien Chauveau",
+     "authors_short": "Matthieu Chourrout, Margaux Roux, Carlie Boisvert, … Marlène Wiart, Fabien Chauveau",
+     "journal": "Biomedical Optics Express",
+     "year": 2021,
+     "type": "journal-article",
+     "doi": "10.1364/boe.438890",
+     "url": "https://doi.org/10.1364/boe.438890",
+     "also": [
+      "10.1101/2021.03.25.436908"
+     ],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier",
+      "Emmanuel Brun"
+     ]
+    },
+    {
+     "title": "Brain virtual histology with X-ray phase-contrast tomography Part I: whole-brain myelin mapping in white-matter injury models",
+     "authors": "Matthieu Chourrout, Hugo Rositi, Elodie Ong, Violaine Hubert, Alexandre Paccalet, Louis Foucault, Awen Autret, Barbara Fayard, Cécile Olivier, Radu Bolbos, Françoise Peyrin, Claire Crola-da-Silva, David Meyronet, Olivier Raineteau, Hélène Elleaume, Emmanuel Brun, Fabien Chauveau, Marlène Wiart",
+     "authors_short": "Matthieu Chourrout, Hugo Rositi, Elodie Ong, … Fabien Chauveau, Marlène Wiart",
+     "journal": "Biomedical Optics Express",
+     "year": 2021,
+     "type": "journal-article",
+     "doi": "10.1364/boe.438832",
+     "url": "https://doi.org/10.1364/boe.438832",
+     "also": [
+      "10.1101/2021.03.24.436852"
+     ],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier",
       "Emmanuel Brun"
      ]
     },
@@ -4182,6 +4486,23 @@
      ]
     },
     {
+     "title": "Quantification of the bone lacunocanalicular network from 3D X-ray phase nanotomography images",
+     "authors": "Boliang Yu, Alexandra Pacureanu, Cécile Olivier, Peter Cloetens, Françoise Peyrin",
+     "authors_short": "Boliang Yu, Alexandra Pacureanu, Cécile Olivier, Peter Cloetens, Françoise Peyrin",
+     "journal": "Journal of Microscopy",
+     "year": 2020,
+     "type": "journal-article",
+     "doi": "10.1111/jmi.12973",
+     "url": "https://doi.org/10.1111/jmi.12973",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Physiologically variable ventilation reduces regional lung inflammation in a pediatric model of acute respiratory distress syndrome",
      "authors": "Dos Santos Rocha, Andre, Fodor, Gergely H., Kassai, Miklos, Degrugilliers, Loic, Bayat, Sam, Petak, Ferenc, Habre, Walid",
      "authors_short": "Dos Santos Rocha, Andre, Fodor, Gergely H., Kassai, Miklos, Degrugilliers, Loic, Bayat, Sam, Petak, Ferenc, Habre, Walid",
@@ -4437,6 +4758,57 @@
      ],
      "members": [
       "Lucie Sancey"
+     ]
+    },
+    {
+     "title": "Assessment of the human bone lacuno-canalicular network at the nanoscale and impact of spatial resolution",
+     "authors": "Boliang Yu, Alexandra Pacureanu, Cécile Olivier, Peter Cloetens, Françoise Peyrin",
+     "authors_short": "Boliang Yu, Alexandra Pacureanu, Cécile Olivier, Peter Cloetens, Françoise Peyrin",
+     "journal": "Scientific Reports",
+     "year": 2020,
+     "type": "journal-article",
+     "doi": "10.1038/s41598-020-61269-8",
+     "url": "https://doi.org/10.1038/s41598-020-61269-8",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "Analyse quantitative morphologique du cartilage à partir du scanner spectral à comptage de photons",
+     "authors": "C. Garcelon, J. Abascal, C. Olivier, S. Si-Mohamed, S. Uk, H.K. Ea, L. Boussel, P. Douek, F. Peyrin, C. Chappard",
+     "authors_short": "C. Garcelon, J. Abascal, C. Olivier, … F. Peyrin, C. Chappard",
+     "journal": "Revue du Rhumatisme",
+     "year": 2020,
+     "type": "journal-article",
+     "doi": "10.1016/j.rhum.2020.10.470",
+     "url": "https://doi.org/10.1016/j.rhum.2020.10.470",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "Analyse quantitative morphologique des géodes sous-chondrales à partir du scanner spectral à comptage de photons",
+     "authors": "J. Abascal, C. Olivier, S. Uk, S. Si-Mohamed, H.K. Ea, L. Boussel, P. Douek, F. Peyrin, C. Chappard",
+     "authors_short": "J. Abascal, C. Olivier, S. Uk, … F. Peyrin, C. Chappard",
+     "journal": "Revue du Rhumatisme",
+     "year": 2020,
+     "type": "journal-article",
+     "doi": "10.1016/j.rhum.2020.10.159",
+     "url": "https://doi.org/10.1016/j.rhum.2020.10.159",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
      ]
     },
     {
@@ -4963,6 +5335,23 @@
      ]
     },
     {
+     "title": "Three-dimensional microstructure images of the bone specimens from Homogenization of cortical bone reveals that the organization and shape of pores marginally affect elasticity",
+     "authors": "Cai, Xiran, Brenner, Renald, Peralta, Laura, Olivier, Cécile, Gouttenoire, Pierre-Jean, Chappard, Christine, Peyrin, Françoise, Cassereau, Didier, Laugier, Pascal, Grimal, Quentin",
+     "authors_short": "Cai, Xiran, Brenner, Renald, Peralta, Laura, … Laugier, Pascal, Grimal, Quentin",
+     "journal": "The Royal Society",
+     "year": 2019,
+     "type": "other",
+     "doi": "10.6084/m9.figshare.7706864",
+     "url": "https://doi.org/10.6084/m9.figshare.7706864",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Three-Dimensional Correlative Imaging of a Malaria-Infected Cell with a Hard X-ray Nanoprobe",
      "authors": "Y. Yang, F. Fus, A. Pacureanu, J. C. da Silva, W. De Nolf, C. Biot, S. Bohic, P. Cloetens",
      "authors_short": "Y. Yang, F. Fus, A. Pacureanu, J. C. da Silva, W. De Nolf, C. Biot, S. Bohic, P. Cloetens",
@@ -5029,6 +5418,23 @@
      ],
      "members": [
       "Sylvain Bohic"
+     ]
+    },
+    {
+     "title": "Segmentation of amyloid-β plaques in three mouse models of Alzheimer's disease using X-ray phase contrast-computed tomography",
+     "authors": "Gislard, Coralie, Boisvert, Carlie, Olivier, Cécile, Peyrin, Françoise, Wiart, Marlène, Boutin, Hervé, Rositi, Hugo, Chauveau, Fabien",
+     "authors_short": "Gislard, Coralie, Boisvert, Carlie, Olivier, Cécile, Peyrin, Françoise, Wiart, Marlène, Boutin, Hervé, Rositi, Hugo, Chauveau, Fabien",
+     "journal": "14th European Molecular Imaging Meeting (EMIM 2019)",
+     "year": 2019,
+     "type": "conference-paper",
+     "doi": "",
+     "url": "https://hal.science/hal-02121424",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
      ]
     },
     {
@@ -5168,6 +5574,40 @@
      ]
     },
     {
+     "title": "Label-free THG imaging of bone tissue microstructure: effect of low gravity on the lacuno-canalicular network",
+     "authors": "Rachel Genthial, Emmanuel Beaurepaire, Marie-Claire Schanne-Klein, Françoise Peyrin, Cécile Olivier, Maude Gerbaix, Laurence Vico, Aurélien Gourrier, Delphine Débarre",
+     "authors_short": "Rachel Genthial, Emmanuel Beaurepaire, Marie-Claire Schanne-Klein, … Aurélien Gourrier, Delphine Débarre",
+     "journal": "Advances in Microscopic Imaging (Proc. SPIE)",
+     "year": 2019,
+     "type": "conference-paper",
+     "doi": "10.1117/12.2527029",
+     "url": "https://doi.org/10.1117/12.2527029",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "Influence of loading condition and anatomical location on human cortical bone linear micro-cracks",
+     "authors": "Rémy Gauthier, Max Langer, Hélène Follet, Cécile Olivier, Pierre-Jean Gouttenoire, Lukas Helfen, Frédéric Rongiéras, David Mitton, Françoise Peyrin",
+     "authors_short": "Rémy Gauthier, Max Langer, Hélène Follet, … David Mitton, Françoise Peyrin",
+     "journal": "Journal of Biomechanics",
+     "year": 2019,
+     "type": "journal-article",
+     "doi": "10.1016/j.jbiomech.2019.01.008",
+     "url": "https://doi.org/10.1016/j.jbiomech.2019.01.008",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "Individual Airway Closure Characterized In Vivo by Phase-Contrast CT Imaging in Injured Rabbit Lung",
      "authors": "Broche, Ludovic, Pisa, Pauline, Porra, Liisa, Degrugilliers, Loic, Bravin, Alberto, Pellegrini, Mariangela, Borges, Joao Batista, Perchiazzi, Gaetano, Larsson, Anders, Hedenstierna, Goran, Bayat, Sam",
      "authors_short": "Broche, Ludovic, Pisa, Pauline, Porra, Liisa, … Hedenstierna, Goran, Bayat, Sam",
@@ -5182,6 +5622,40 @@
      ],
      "members": [
       "Sam Bayat"
+     ]
+    },
+    {
+     "title": "Human Knee Phantom for Spectral CT: Validation of a Material Decomposition Algorithm",
+     "authors": "S. Bussod, J.F.P.J. Abascal, N. Ducros, C. Olivier, S. Si-Mohamed, P. Douek, C. Chappard, F. Peyrin",
+     "authors_short": "S. Bussod, J.F.P.J. Abascal, N. Ducros, C. Olivier, S. Si-Mohamed, P. Douek, C. Chappard, F. Peyrin",
+     "journal": "IEEE International Symposium on Biomedical Imaging (ISBI)",
+     "year": 2019,
+     "type": "conference-paper",
+     "doi": "10.1109/isbi.2019.8759192",
+     "url": "https://doi.org/10.1109/isbi.2019.8759192",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "Homogenization of cortical bone reveals that the organization and shape of pores marginally affect elasticity",
+     "authors": "Xiran Cai, Renald Brenner, Laura Peralta, Cécile Olivier, Pierre-Jean Gouttenoire, Christine Chappard, Françoise Peyrin, Didier Cassereau, Pascal Laugier, Quentin Grimal",
+     "authors_short": "Xiran Cai, Renald Brenner, Laura Peralta, … Pascal Laugier, Quentin Grimal",
+     "journal": "Journal of The Royal Society Interface",
+     "year": 2019,
+     "type": "journal-article",
+     "doi": "10.1098/rsif.2018.0911",
+     "url": "https://doi.org/10.1098/rsif.2018.0911",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
      ]
     },
     {
@@ -5357,6 +5831,23 @@
      ]
     },
     {
+     "title": "Anisotropic elastic properties of human femoral cortical bone and relationships with composition and microstructure in elderly",
+     "authors": "Xiran Cai, Hélène Follet, Laura Peralta, Marc Gardegaront, Delphine Farlay, Rémy Gauthier, Boliang Yu, Evelyne Gineyts, Cécile Olivier, Max Langer, Aurélien Gourrier, David Mitton, Françoise Peyrin, Quentin Grimal, Pascal Laugier",
+     "authors_short": "Xiran Cai, Hélène Follet, Laura Peralta, … Quentin Grimal, Pascal Laugier",
+     "journal": "Acta Biomaterialia",
+     "year": 2019,
+     "type": "journal-article",
+     "doi": "10.1016/j.actbio.2019.03.043",
+     "url": "https://doi.org/10.1016/j.actbio.2019.03.043",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
      "title": "An unusual palatine tonsil lesion,Une lésion amygdalienne atypique",
      "authors": "Fabre, C., Gil, H., Righini, C.A.",
      "authors_short": "Fabre, C., Gil, H., Righini, C.A.",
@@ -5408,6 +5899,40 @@
       "Emmanuel Brun",
       "Sam Bayat",
       "Sylvain Bohic"
+     ]
+    },
+    {
+     "title": "3D analysis of the osteonal tissue in human cortical bone",
+     "authors": "Gauthier, Rémy, Follet, Hélène, Olivier, Cécile, Mitton, David, Peyrin, Françoise",
+     "authors_short": "Gauthier, Rémy, Follet, Hélène, Olivier, Cécile, Mitton, David, Peyrin, Françoise",
+     "journal": "25th Congress of the European Society of Biomechanics",
+     "year": 2019,
+     "type": "conference-paper",
+     "doi": "",
+     "url": "https://hal.science/hal-02441874",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
+     ]
+    },
+    {
+     "title": "3D analysis of the osteonal and interstitial tissue in human radii cortical bone",
+     "authors": "Rémy Gauthier, Hélène Follet, Cécile Olivier, David Mitton, Françoise Peyrin",
+     "authors_short": "Rémy Gauthier, Hélène Follet, Cécile Olivier, David Mitton, Françoise Peyrin",
+     "journal": "Bone",
+     "year": 2019,
+     "type": "journal-article",
+     "doi": "10.1016/j.bone.2019.07.028",
+     "url": "https://doi.org/10.1016/j.bone.2019.07.028",
+     "also": [],
+     "groups": [
+      "xwi"
+     ],
+     "members": [
+      "Cécile Olivier"
      ]
     }
    ]
